@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { X, Menu } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -46,8 +45,9 @@ export default function Navbar() {
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 font-mono text-xl font-semibold">
-            <Image
-              src="/icon.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/icon.png`}
               alt="Databased logo"
               width={36}
               height={36}

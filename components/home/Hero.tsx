@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
 export default function Hero() {
@@ -42,13 +41,13 @@ export default function Hero() {
               'radial-gradient(ellipse 88% 78% at 50% 50%, black 55%, transparent 100%)',
           }}
         >
-          <Image
-            src="/textOld.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/textOld.png`}
             alt="Databased"
             width={800}
             height={260}
             className="w-full h-auto"
-            priority
           />
         </motion.div>
 

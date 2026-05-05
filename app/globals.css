@@ -10,9 +10,9 @@
   --c-bg-elevated:    30  33  43;    /* #1e212b */
   --c-border:         46  50  62;    /* #2e323e – more visible borders */
   --c-border-subtle:  30  33  43;    /* #1e212b */
-  --c-text-primary:   238 238 238;   /* #eeeeee */
-  --c-text-secondary: 160 165 185;   /* #a0a5b9 – brighter than before */
-  --c-text-muted:     110 115 134;   /* #6e7386 – was #474c5c, now readable */
+  --c-text-primary:   255 255 255;   /* #ffffff pure white */
+  --c-text-secondary: 255 255 255;   /* #ffffff pure white */
+  --c-text-muted:     160 165 180;   /* dimmed for placeholders/metadata only */
   --c-accent:         16  249  51;   /* #10f933 logo green */
   --c-accent-dim:     13  31  17;    /* very dark green tint */
   --c-mono:           255 102   0;   /* #ff6600 logo orange */

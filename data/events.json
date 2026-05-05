@@ -1,0 +1,98 @@
+[
+  {
+    "id": "open-day-2025",
+    "title": "IISc Open Day 2025",
+    "date": "2025-02-23",
+    "type": "Other",
+    "description": "Databased's showcase at IISc Open Day 2025 — interactive demos including terrain generation, Nim game, Tic-Tac-Toe with AI, and cryptography challenges.",
+    "link": "https://databased.csa.iisc.ac.in/pages/open-day-2025/"
+  },
+  {
+    "id": "hack-and-seek-2024",
+    "title": "Hack and Seek 2024",
+    "date": "2024-08-15",
+    "type": "CTF",
+    "description": "Annual internal Capture the Flag competition testing skills in web exploitation, cryptography, reverse engineering, forensics, and binary exploitation.",
+    "link": "https://databased.csa.iisc.ac.in/pages/hack-and-seek/"
+  },
+  {
+    "id": "algorithm-festival-2024",
+    "title": "Algorithm Festival 2024",
+    "date": "2024-04-20",
+    "type": "Competition",
+    "description": "A day-long competitive programming contest with problems from beginner to expert difficulty, featuring live rankings and prizes.",
+    "link": "https://databased.csa.iisc.ac.in/pages/algorithms/"
+  },
+  {
+    "id": "ideathon-2024",
+    "title": "Ideathon 2024",
+    "date": "2024-11-05",
+    "type": "Competition",
+    "description": "A 24-hour hackathon-style ideathon where teams pitched and prototyped solutions to real-world problems using data science and AI.",
+    "link": "https://databased.csa.iisc.ac.in/pages/ideathon/"
+  },
+  {
+    "id": "open-day-2024",
+    "title": "IISc Open Day 2024",
+    "date": "2024-02-24",
+    "type": "Other",
+    "description": "Our Open Day booth featured interactive exhibits on algorithms, computer vision, and cybersecurity for school students and visitors.",
+    "link": "https://databased.csa.iisc.ac.in/pages/open-day-2024/"
+  },
+  {
+    "id": "ml-workshop-2024",
+    "title": "Intro to Machine Learning",
+    "date": "2024-09-10",
+    "type": "Workshop",
+    "description": "Hands-on workshop covering ML fundamentals — from linear regression to neural networks — with live coding sessions in Python and scikit-learn.",
+    "link": null
+  },
+  {
+    "id": "systems-talk-2024",
+    "title": "Operating Systems: Under the Hood",
+    "date": "2024-10-15",
+    "type": "Talk",
+    "description": "Guest talk on modern OS design, memory management, and scheduling algorithms by a researcher from the CDS department.",
+    "link": null
+  },
+  {
+    "id": "web-dev-workshop-2024",
+    "title": "Full-Stack Web Development",
+    "date": "2024-07-20",
+    "type": "Workshop",
+    "description": "Three-session workshop on modern web development covering HTML/CSS/JS fundamentals, React, and backend APIs with Node.js.",
+    "link": null
+  },
+  {
+    "id": "alumni-talk-2024",
+    "title": "Alumni Session: Life After IISc",
+    "date": "2024-06-08",
+    "type": "Talk",
+    "description": "Panel discussion with IISc alumni at Google, Amazon, and top research labs — covering career paths, research vs. industry, and advice for undergrads.",
+    "link": null
+  },
+  {
+    "id": "math-sessions-2024",
+    "title": "Mathematics for CS Series",
+    "date": "2024-03-01",
+    "type": "Workshop",
+    "description": "Five-session series covering discrete math, combinatorics, probability, and linear algebra — essential foundations for any CS student.",
+    "link": "https://databased.csa.iisc.ac.in/pages/math-sessions/"
+  },
+  {
+    "id": "paradox-ctf-2023",
+    "title": "Paradox CTF 2023",
+    "date": "2023-12-02",
+    "type": "CTF",
+    "description": "Beginner-friendly CTF focused on introductory security concepts — designed to onboard new students to the world of cybersecurity.",
+    "link": "https://databased.csa.iisc.ac.in/pages/paradox/"
+  },
+  {
+    "id": "launch-2023",
+    "title": "Databased Launch Event",
+    "date": "2023-09-15",
+    "type": "Other",
+    "description": "The inaugural event of Databased — introducing the club, its vision, and the activities planned for the year to new B.Tech. students.",
+    "link": "https://databased.csa.iisc.ac.in/pages/launch/"
+  }
+]

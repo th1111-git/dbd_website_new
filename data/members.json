@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Thrayambhakesh H",
+    "role": "President",
+    "year": "2025",
+    "category": "Core Team",
+    "links": {}
+  },
+  {
+    "name": "Aryan Gupta",
+    "role": "Vice President",
+    "year": "2025",
+    "category": "Core Team",
+    "links": {}
+  },
+  {
+    "name": "Priya Nair",
+    "role": "Technical Lead",
+    "year": "2025",
+    "category": "Core Team",
+    "links": {}
+  },
+  {
+    "name": "Rahul Sharma",
+    "role": "CTF Lead",
+    "year": "2025",
+    "category": "Core Team",
+    "links": {}
+  },
+  {
+    "name": "Siddharth Rao",
+    "role": "Competitive Programming Lead",
+    "year": "2025",
+    "category": "Core Team",
+    "links": {}
+  },
+  {
+    "name": "Ananya Iyer",
+    "role": "Events Coordinator",
+    "year": "2025",
+    "category": "Coordinators",
+    "links": {}
+  },
+  {
+    "name": "Kiran Reddy",
+    "role": "Web Coordinator",
+    "year": "2025",
+    "category": "Coordinators",
+    "links": {}
+  },
+  {
+    "name": "Meera Krishnan",
+    "role": "Design Coordinator",
+    "year": "2025",
+    "category": "Coordinators",
+    "links": {}
+  },
+  {
+    "name": "Aditya Verma",
+    "role": "Outreach Coordinator",
+    "year": "2025",
+    "category": "Coordinators",
+    "links": {}
+  },
+  {
+    "name": "Sneha Pillai",
+    "role": "Workshop Coordinator",
+    "year": "2025",
+    "category": "Coordinators",
+    "links": {}
+  }
+]

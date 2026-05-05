@@ -1,0 +1,100 @@
+[
+  {
+    "title": "CP Algorithms",
+    "category": "Competitive Programming",
+    "link": "https://cp-algorithms.com",
+    "description": "Comprehensive reference for competitive programming algorithms and data structures, with detailed explanations and C++ implementations.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "CSES Problem Set",
+    "category": "Competitive Programming",
+    "link": "https://cses.fi/problemset/",
+    "description": "~300 curated competitive programming problems covering all major topics — widely considered the best structured problem set for learning.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "Codeforces",
+    "category": "Competitive Programming",
+    "link": "https://codeforces.com",
+    "description": "The leading competitive programming platform. Regular Div. 1–4 contests, editorial write-ups, and a massive problem archive.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "Competitive Programmer's Handbook",
+    "category": "Competitive Programming",
+    "link": "https://cses.fi/book/book.pdf",
+    "description": "Free PDF textbook by Antti Laaksonen covering graph theory, dynamic programming, number theory, and more for competitive programmers.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "picoCTF",
+    "category": "CTF / Security",
+    "link": "https://picoctf.org",
+    "description": "Beginner-friendly CTF platform by Carnegie Mellon University. Challenges in web, crypto, forensics, reverse engineering, and binary exploitation.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "pwn.college",
+    "category": "CTF / Security",
+    "link": "https://pwn.college",
+    "description": "Structured learning platform for binary exploitation and systems security — covering GDB, shellcode, ROP chains, kernel exploitation.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "CryptoPals Challenges",
+    "category": "CTF / Security",
+    "link": "https://cryptopals.com",
+    "description": "Hands-on cryptography challenges that teach you to break real cryptographic systems through practical implementation. Highly recommended.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "CTFtime.org",
+    "category": "CTF / Security",
+    "link": "https://ctftime.org",
+    "description": "Calendar and archive of CTF competitions worldwide. Find upcoming events, team rankings, and write-ups from past competitions.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "fast.ai Practical Deep Learning",
+    "category": "Machine Learning",
+    "link": "https://course.fast.ai",
+    "description": "Top-down approach to deep learning: practical course that gets you building state-of-the-art models from lesson one, no PhD required.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "Andrej Karpathy: Zero to Hero",
+    "category": "Machine Learning",
+    "link": "https://karpathy.ai/zero-to-hero.html",
+    "description": "Build neural networks from scratch in Python, culminating in a GPT-style language model. The clearest explanation of backprop that exists.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "CS:APP — Bryant & O'Hallaron",
+    "category": "Systems & Architecture",
+    "link": "https://csapp.cs.cmu.edu",
+    "description": "Computer Systems: A Programmer's Perspective — the definitive systems programming textbook. Assembly, memory, caching, linking, concurrency.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "title": "MIT 6.824 Distributed Systems",
+    "category": "Systems & Architecture",
+    "link": "https://pdos.csail.mit.edu/6.824/",
+    "description": "MIT's graduate distributed systems course. Lectures and labs covering Raft consensus, MapReduce, and fault-tolerant key-value storage.",
+    "difficulty": "Advanced"
+  },
+  {
+    "title": "The Missing Semester of CS",
+    "category": "General CS",
+    "link": "https://missing.csail.mit.edu",
+    "description": "MIT's course on practical tools CS education skips: the shell, Vim, Git internals, debugging, profiling, and more. Essential for every student.",
+    "difficulty": "Beginner"
+  },
+  {
+    "title": "Project Euler",
+    "category": "General CS",
+    "link": "https://projecteuler.net",
+    "description": "Mathematical and computational problems requiring creative algorithmic thinking. Great for sharpening both mathematical reasoning and coding skills.",
+    "difficulty": "Intermediate"
+  }
+]

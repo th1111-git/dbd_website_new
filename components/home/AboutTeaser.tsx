@@ -5,12 +5,6 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
 
-const stats = [
-  { value: '40+', label: 'Members' },
-  { value: '3+', label: 'Years Active' },
-  { value: '50+', label: 'Events Hosted' },
-]
-
 export default function AboutTeaser() {
   return (
     <section className="py-24 bg-bg-surface">
@@ -18,15 +12,9 @@ export default function AboutTeaser() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
             <SectionHeading eyebrow="About" title="Who we are" />
-            <p className="text-text-secondary leading-relaxed mb-4">
-              Databased is the undergraduate computer science club at the Indian
-              Institute of Science, Bengaluru — run entirely by B.Tech. Mathematics
-              and Computing students under the CSA department.
-            </p>
-            <p className="text-text-secondary leading-relaxed mb-8">
-              We host competitive programming contests, CTF competitions, tech talks,
-              workshops, and alumni sessions throughout the year. Everyone is welcome —
-              from complete beginners to seasoned hackers.
+            <p className="text-text-secondary leading-relaxed mb-4 text-justify">
+Welcome to Databased, the CS Crew at the Indian Institute of Science (IISc), where curiosity and innovation come together to create something extraordinary! We're a community of students passionate about diving deep into the world of computer science and related fields. We're here to provide a comprehensive resource for beginners to learn, grow, and create.
+
             </p>
             <Link
               href="/about"
@@ -36,21 +24,19 @@ export default function AboutTeaser() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
-            {stats.map(({ value, label }, i) => (
-              <motion.div
-                key={label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="p-6 bg-bg-base rounded-lg border border-border text-center hover:border-accent-dim transition-colors duration-300"
-              >
-                <p className="font-mono text-3xl font-bold text-accent mb-1">{value}</p>
-                <p className="text-text-secondary text-xs font-mono">{label}</p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center justify-center"
+          >
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/iisc-linesketch.png`}
+              alt="IISc campus line sketch"
+              className="w-full max-w-md opacity-80"
+            />
+          </motion.div>
         </div>
       </div>
     </section>

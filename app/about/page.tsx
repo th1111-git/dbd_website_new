@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="pt-16">
       {/* About text */}
-      <section className="max-w-6xl mx-auto px-6 py-20 border-b border-border">
+      <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="max-w-2xl">
           <SectionHeading eyebrow="About" title="Who we are" />
           <div className="mt-8 space-y-4 text-text-secondary leading-relaxed">

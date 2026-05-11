@@ -10,21 +10,21 @@ export default function Hero() {
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-25" />
 
-      {/* Vignette — subtle bottom fade only */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-base/60" />
+      {/* Vignette — bottom fade into next section */}
+      <div className="absolute inset-0 bg-gradient-to-t from-bg-base via-bg-base/40 to-transparent" />
 
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 pt-20 max-w-4xl mx-auto w-full">
-        {/* Eyebrow */}
+        {/* Eyebrow pill */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="flex items-center gap-2 mb-10"
+          className="flex items-center gap-2.5 mb-10 px-4 py-2 rounded-full border border-accent/40 bg-bg-base/60 backdrop-blur-sm"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          <span className="font-mono text-xs text-text-secondary tracking-widest uppercase">
-            IISc · Bengaluru · CSA Dept.
+          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shrink-0" />
+          <span className="font-mono text-xs text-accent tracking-widest uppercase">
+            IISc's Computer Science Crew
           </span>
         </motion.div>
 
@@ -52,25 +52,6 @@ export default function Hero() {
           />
         </motion.div>
 
-        {/* Subheading + description with frosted backdrop */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.35 }}
-          className="relative mb-10 px-8 py-5 rounded-2xl overflow-hidden"
-        >
-          <div className="absolute inset-0 bg-bg-base/50 backdrop-blur-md rounded-2xl" />
-          <div className="relative flex flex-col items-center gap-3">
-            <p className="text-lg text-text-secondary">
-              IISc's Undergraduate CS Club
-            </p>
-            <p className="text-text-secondary leading-relaxed max-w-md">
-              B.Tech. Mathematics &amp; Computing students at IISc — building community
-              through competitions, workshops, and collaboration.
-            </p>
-          </div>
-        </motion.div>
-
         {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -94,7 +75,7 @@ export default function Hero() {
         transition={{ delay: 1.2 }}
         onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
         aria-label="Scroll to next section"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-text-muted hover:text-accent transition-colors duration-300 cursor-pointer"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 p-20 text-text-muted hover:text-accent transition-colors duration-300 cursor-pointer"
       >
         <motion.div
           animate={{ y: [0, 6, 0] }}

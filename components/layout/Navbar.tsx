@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { X, Menu } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import ThemeToggle from '@/components/layout/ThemeToggle'
 
 const navLinks = [
   { href: '/',          label: 'Home' },
@@ -16,15 +15,8 @@ const navLinks = [
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   useEffect(() => { setMenuOpen(false) }, [pathname])
 
@@ -82,7 +74,6 @@ export default function Navbar() {
 
           {/* Right controls */}
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <button
               className="md:hidden text-text-secondary hover:text-text-primary transition-colors p-1"
               onClick={() => setMenuOpen(!menuOpen)}

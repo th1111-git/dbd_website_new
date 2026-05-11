@@ -14,7 +14,7 @@ export default function EventsClient({ events }: { events: Event[] }) {
     activeFilter === 'All' ? events : events.filter((e) => e.type === activeFilter)
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24 pb-16 min-h-screen bg-bg-base">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <SectionHeading
           eyebrow="Events"

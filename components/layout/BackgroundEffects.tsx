@@ -10,7 +10,7 @@ export default function BackgroundEffects() {
       style={{ zIndex: 0 }}
     >
       <DotField
-        dotRadius={2.5}
+        dotRadius={3.2}
         dotSpacing={18}
         cursorRadius={80}
         bulgeOnly

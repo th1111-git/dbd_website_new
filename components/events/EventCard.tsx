@@ -45,7 +45,7 @@ export default function EventCard({ event }: { event: Event }) {
         )}
       </div>
 
-      <h3 className="font-semibold text-text-primary leading-snug text-sm flex-1">
+      <h3 className="font-display font-semibold text-text-primary leading-snug text-sm flex-1">
         {event.title}
       </h3>
 

@@ -5,9 +5,9 @@
 /* ─── Dark mode (default) ─────────────────────────────────────────────────── */
 :root {
   /* Space-separated RGB so Tailwind opacity modifiers work: bg-accent/10 */
-  --c-bg-base:        12  13  15;    /* #0c0d0f */
-  --c-bg-surface:     20  22  29;    /* #14161d – slightly lighter for card distinction */
-  --c-bg-elevated:    30  33  43;    /* #1e212b */
+  --c-bg-base:         7   8   9;    /* #070809 very dark cool-neutral */
+  --c-bg-surface:     14  16  19;    /* #0e1013 dark cool-neutral */
+  --c-bg-elevated:    22  25  30;    /* #16191e elevated cool-neutral */
   --c-border:         46  50  62;    /* #2e323e – more visible borders */
   --c-border-subtle:  30  33  43;    /* #1e212b */
   --c-text-primary:   255 255 255;   /* #ffffff pure white */

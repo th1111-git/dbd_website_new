@@ -22,7 +22,7 @@ export default function PostCard({ post }: { post: Post }) {
       </div>
 
       <div className="flex-1">
-        <h3 className="font-semibold text-text-primary mb-2 leading-snug">{post.title}</h3>
+        <h3 className="font-display font-semibold text-text-primary mb-2 leading-snug">{post.title}</h3>
         <p className="text-text-secondary text-sm leading-relaxed">{post.excerpt}</p>
       </div>
 

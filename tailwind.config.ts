@@ -25,8 +25,9 @@ const config: Config = {
         'mono-dim':      'rgb(var(--c-mono-dim)      / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        mono: ['var(--font-mono)', 'monospace'],
+        sans:    ['var(--font-inter)',    'sans-serif'],
+        mono:    ['var(--font-mono)',     'monospace'],
+        display: ['var(--font-display)', 'sans-serif'],
       },
       animation: {
         blink: 'blink 1s step-end infinite',

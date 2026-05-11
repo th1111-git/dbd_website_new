@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 import Button from '@/components/ui/Button'
 
 export default function Hero() {
@@ -9,8 +10,8 @@ export default function Hero() {
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-25" />
 
-      {/* Vignette */}
-      <div className="absolute inset-0 bg-gradient-to-b from-bg-base via-transparent to-bg-surface" />
+      {/* Vignette — subtle bottom fade only */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-base/60" />
 
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 pt-20 max-w-4xl mx-auto w-full">
@@ -51,25 +52,24 @@ export default function Hero() {
           />
         </motion.div>
 
-        {/* Subheading */}
-        <motion.p
+        {/* Subheading + description with frosted backdrop */}
+        <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.35 }}
-          className="text-lg text-text-secondary mb-3"
+          className="relative mb-10 px-8 py-5 rounded-2xl overflow-hidden"
         >
-          IISc's Undergraduate CS Club
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.45 }}
-          className="text-text-secondary leading-relaxed max-w-md mb-10"
-        >
-          B.Tech. Mathematics &amp; Computing students at IISc — building community
-          through competitions, workshops, and collaboration.
-        </motion.p>
+          <div className="absolute inset-0 bg-bg-base/50 backdrop-blur-md rounded-2xl" />
+          <div className="relative flex flex-col items-center gap-3">
+            <p className="text-lg text-text-secondary">
+              IISc's Undergraduate CS Club
+            </p>
+            <p className="text-text-secondary leading-relaxed max-w-md">
+              B.Tech. Mathematics &amp; Computing students at IISc — building community
+              through competitions, workshops, and collaboration.
+            </p>
+          </div>
+        </motion.div>
 
         {/* CTAs */}
         <motion.div
@@ -88,18 +88,21 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+        aria-label="Scroll to next section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-text-muted hover:text-accent transition-colors duration-300 cursor-pointer"
       >
         <motion.div
-          animate={{ y: [0, 8, 0] }}
+          animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
-          className="w-px h-10 bg-gradient-to-b from-text-muted to-transparent"
-        />
-      </motion.div>
+        >
+          <ChevronDown size={22} strokeWidth={1.5} />
+        </motion.div>
+      </motion.button>
     </section>
   )
 }

@@ -54,7 +54,7 @@ export default function WhatWeDo() {
               <div className="w-10 h-10 rounded-md bg-accent-dim flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors duration-300">
                 <Icon size={18} className="text-accent" />
               </div>
-              <h3 className="font-semibold text-text-primary text-sm mb-2">{title}</h3>
+              <h3 className="font-display font-semibold text-text-primary text-sm mb-2">{title}</h3>
               <p className="text-text-secondary text-sm leading-relaxed">{description}</p>
             </motion.div>
           ))}

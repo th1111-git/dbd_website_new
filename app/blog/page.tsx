@@ -39,7 +39,7 @@ const posts: Post[] = [
 
 export default function BlogPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-16 min-h-screen bg-bg-base">
       <div className="max-w-6xl mx-auto px-6 py-20">
         <SectionHeading
           eyebrow="Blog"

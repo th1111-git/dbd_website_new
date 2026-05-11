@@ -40,7 +40,7 @@ export default function MemberCard({ member }: { member: Member }) {
       </div>
 
       <div>
-        <p className="font-semibold text-text-primary text-sm">{member.name}</p>
+        <p className="font-display font-semibold text-text-primary text-sm">{member.name}</p>
         <p className="text-text-secondary text-xs font-mono mt-0.5">{member.role}</p>
         <p className="text-text-secondary text-xs font-mono opacity-50">{member.year}</p>
       </div>

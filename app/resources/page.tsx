@@ -17,7 +17,7 @@ export default function ResourcesPage() {
   const categories = [...new Set(resourcesData.map((r) => r.category))]
 
   return (
-    <div className="pt-16">
+    <div className="pt-16 min-h-screen bg-bg-base">
       <div className="max-w-6xl mx-auto px-6 py-20">
         <SectionHeading
           eyebrow="Resources"
@@ -47,7 +47,7 @@ export default function ResourcesPage() {
                       className="group p-4 bg-bg-surface rounded-lg border border-border hover:border-accent/25 transition-all duration-200 flex flex-col gap-3"
                     >
                       <div className="flex items-start justify-between gap-2">
-                        <h3 className="font-semibold text-text-primary text-sm leading-snug group-hover:text-accent transition-colors">
+                        <h3 className="font-display font-semibold text-text-primary text-sm leading-snug group-hover:text-accent transition-colors">
                           {resource.title}
                         </h3>
                         <ExternalLink

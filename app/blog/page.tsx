@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import SectionHeading from '@/components/ui/SectionHeading'
 import PostCard from '@/components/blog/PostCard'
 import type { Post } from '@/components/blog/PostCard'
+import PageBackground from '@/components/layout/PageBackground'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -39,7 +40,7 @@ const posts: Post[] = [
 
 export default function BlogPage() {
   return (
-    <div className="pt-16 min-h-screen bg-bg-base">
+    <PageBackground>
       <div className="max-w-6xl mx-auto px-6 py-20">
         <SectionHeading
           eyebrow="Blog"
@@ -69,6 +70,6 @@ export default function BlogPage() {
           </p>
         </div>
       </div>
-    </div>
+    </PageBackground>
   )
 }

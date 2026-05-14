@@ -10,8 +10,8 @@ export default function HomePage() {
     <>
       <Hero />
       <AboutTeaser />
-      <FeaturedEvents events={featured} />
       <WhatWeDo />
+      <FeaturedEvents events={featured} />
     </>
   )
 }

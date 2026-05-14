@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import membersData from '@/data/members.json'
 import MemberGrid from '@/components/about/MemberGrid'
 import SectionHeading from '@/components/ui/SectionHeading'
+import PageBackground from '@/components/layout/PageBackground'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-16 min-h-screen bg-bg-base">
+    <PageBackground>
       {/* About text */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="max-w-2xl">
@@ -54,6 +55,6 @@ export default function AboutPage() {
           <MemberGrid members={membersData} />
         </div>
       </section>
-    </div>
+    </PageBackground>
   )
 }

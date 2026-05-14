@@ -7,6 +7,7 @@ import EventFilters from './EventFilters'
 import EventsBanner from './EventsBanner'
 import SectionHeading from '@/components/ui/SectionHeading'
 import type { Event } from './EventCard'
+import PageBackground from '@/components/layout/PageBackground'
 
 export default function EventsClient({ events }: { events: Event[] }) {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -15,7 +16,7 @@ export default function EventsClient({ events }: { events: Event[] }) {
     activeFilter === 'All' ? events : events.filter((e) => e.type === activeFilter)
 
   return (
-    <div className="pt-16 pb-16 min-h-screen bg-bg-base">
+    <PageBackground>
       <EventsBanner events={events} />
       <div className="max-w-6xl mx-auto px-6 py-16">
         <SectionHeading
@@ -56,6 +57,6 @@ export default function EventsClient({ events }: { events: Event[] }) {
           )}
         </div>
       </div>
-    </div>
+    </PageBackground>
   )
 }

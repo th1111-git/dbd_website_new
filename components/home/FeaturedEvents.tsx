@@ -9,7 +9,7 @@ import type { Event } from '@/components/events/EventCard'
 
 export default function FeaturedEvents({ events }: { events: Event[] }) {
   return (
-    <section className="py-24 bg-bg-surface">
+    <section className="py-24 bg-bg-base">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-end justify-between mb-12">
           <SectionHeading eyebrow="Events" title="Recent Events" />

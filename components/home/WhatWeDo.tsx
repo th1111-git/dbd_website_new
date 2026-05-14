@@ -33,7 +33,7 @@ const activities = [
 
 export default function WhatWeDo() {
   return (
-    <section className="py-24 bg-bg-base">
+    <section className="py-24 bg-bg-surface">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           eyebrow="Activities"

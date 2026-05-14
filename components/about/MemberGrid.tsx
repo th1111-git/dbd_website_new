@@ -3,15 +3,16 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import MemberCard from './MemberCard'
+import MemberModal from './MemberModal'
 import type { Member } from './MemberCard'
 
-const FILTERS = ['All', 'Core Team', 'Coordinators']
+const FILTERS = ['2026', '2025', '2024', '2023']
 
 export default function MemberGrid({ members }: { members: Member[] }) {
-  const [active, setActive] = useState('All')
+  const [active, setActive] = useState('2025')
+  const [selected, setSelected] = useState<Member | null>(null)
 
-  const filtered =
-    active === 'All' ? members : members.filter((m) => m.category === active)
+  const filtered = members.filter((m) => m.year === active)
 
   return (
     <div>
@@ -48,11 +49,13 @@ export default function MemberGrid({ members }: { members: Member[] }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: i * 0.05 }}
             >
-              <MemberCard member={member} />
+              <MemberCard member={member} onClick={() => setSelected(member)} />
             </motion.div>
           ))}
         </motion.div>
       </AnimatePresence>
+
+      <MemberModal member={selected} onClose={() => setSelected(null)} />
     </div>
   )
 }

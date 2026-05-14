@@ -1,4 +1,3 @@
-import { Github, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 
 export interface Member {
@@ -6,14 +5,16 @@ export interface Member {
   role: string
   year: string
   category: string
+  bio?: string
   photo?: string
   links?: {
     github?: string
     linkedin?: string
+    email?: string
   }
 }
 
-export default function MemberCard({ member }: { member: Member }) {
+export default function MemberCard({ member, onClick }: { member: Member; onClick?: () => void }) {
   const initials = member.name
     .split(' ')
     .map((n) => n[0])
@@ -21,11 +22,12 @@ export default function MemberCard({ member }: { member: Member }) {
     .slice(0, 2)
     .toUpperCase()
 
-  const hasLinks = member.links && Object.values(member.links).some(Boolean)
-
   return (
-    <div className="p-5 bg-bg-surface rounded-lg border border-border hover:border-accent-dim transition-all duration-300 flex flex-col items-center text-center gap-3">
-      <div className="w-16 h-16 rounded-full overflow-hidden bg-accent-dim flex items-center justify-center shrink-0">
+    <button
+      onClick={onClick}
+      className="w-full p-5 bg-bg-surface rounded-lg border border-border hover:border-accent/40 hover:bg-bg-elevated transition-all duration-300 flex flex-col items-center text-center gap-3 cursor-pointer group"
+    >
+      <div className="w-16 h-16 rounded-full overflow-hidden bg-accent-dim flex items-center justify-center shrink-0 ring-1 ring-transparent group-hover:ring-accent/30 transition-all duration-300">
         {member.photo ? (
           <Image
             src={member.photo}
@@ -44,33 +46,6 @@ export default function MemberCard({ member }: { member: Member }) {
         <p className="text-text-secondary text-xs font-mono mt-0.5">{member.role}</p>
         <p className="text-text-secondary text-xs font-mono opacity-50">{member.year}</p>
       </div>
-
-      {hasLinks && (
-        <div className="flex items-center gap-3">
-          {member.links?.github && (
-            <a
-              href={member.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${member.name} on GitHub`}
-              className="text-text-secondary hover:text-accent transition-colors"
-            >
-              <Github size={14} />
-            </a>
-          )}
-          {member.links?.linkedin && (
-            <a
-              href={member.links.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${member.name} on LinkedIn`}
-              className="text-text-secondary hover:text-accent transition-colors"
-            >
-              <Linkedin size={14} />
-            </a>
-          )}
-        </div>
-      )}
-    </div>
+    </button>
   )
 }

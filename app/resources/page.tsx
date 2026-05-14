@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { ExternalLink } from 'lucide-react'
 import SectionHeading from '@/components/ui/SectionHeading'
 import resourcesData from '@/data/resources.json'
+import PageBackground from '@/components/layout/PageBackground'
 
 export const metadata: Metadata = {
   title: 'Resources',
@@ -17,7 +18,7 @@ export default function ResourcesPage() {
   const categories = [...new Set(resourcesData.map((r) => r.category))]
 
   return (
-    <div className="pt-16 min-h-screen bg-bg-base">
+    <PageBackground>
       <div className="max-w-6xl mx-auto px-6 py-20">
         <SectionHeading
           eyebrow="Resources"
@@ -72,6 +73,6 @@ export default function ResourcesPage() {
           ))}
         </div>
       </div>
-    </div>
+    </PageBackground>
   )
 }

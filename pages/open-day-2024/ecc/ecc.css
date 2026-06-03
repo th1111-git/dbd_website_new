@@ -1,0 +1,51 @@
+body {
+    background: rgb(24, 8, 52) !important;
+}
+
+main {
+    padding-top: 15vh;
+    height: 100vh;
+    text-align: center;
+}
+
+#bit-table {
+    width: auto;
+    margin: 50px auto 0 auto;
+}
+
+.bit {
+    height: 80px;
+    width: 80px;
+    background-color: azure;
+    border: 5px solid transparent outset;
+    cursor: pointer;
+}
+
+.bit:hover {
+    background-color: #888;
+}
+
+.bit.invisible {
+    display: none;
+}
+
+.bit.on {
+    background-color: darkslategrey;
+}
+
+.bit.on:hover {
+    background-color: darkseagreen;
+}
+
+#button-container {
+    margin-top: 50px;
+}
+
+.button {
+    font-size: 20px;
+    color: black;
+    padding: 2px 15px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+}

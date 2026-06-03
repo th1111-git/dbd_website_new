@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Maximise the sum - Databased | Open Day 2025" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://databased.csa.iisc.ac.in/pages/open-day-2025/maximise-the-sum/" />
+    <meta property="og:image" content="https://databased.csa.iisc.ac.in/img/open-day-2025/maximise-the-sum.webp" />
+    <meta property="og:description" content="A game of algorithms, intuition, and optimization! In Maximise The Sum, you’ll face a series of choices where strategy matters most. Learn how algorithms can help in decision-making, dynamic programming, and solving constraint problems through play.">
+    <meta name="twitter:card" content="app" />
+    <meta name="twitter:site" content="@databasedIISc" />
+    <meta name="description" content="Join Databased at IISc Open Day 2025 for Maximise The Sum, a strategy-driven game that challenges you to find optimal solutions through logic and computation."">
+    <meta name="keywords" content="Maximise the Sum IISc, Algorithm games demo, Strategy puzzles Open Day, Databased 2025 demos, Optimal strategy game, Decision-based CS games, Algorithms for kids demo, Undergraduate CS showcase">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal Strategy Game</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+    <script src="assets/js/game.js" defer></script>
+</head>
+<body>
+    <button id="eshowbtn" onclick="toggleExplanation()">〈 </button>
+    <div id="content">
+        <h1 id="title">Maximize the Sum</h1>
+        <div class="buttons">
+            <button class="btn" onclick="startGame(1)">Play as Player 1</button>
+            <button class="btn" onclick="startGame(2)">Play as Player 2</button>
+        </div>
+
+        <div class="container" id="box-container"></div>
+        <div id="result"></div>
+        <div id="confetti-container"></div>
+    </div>
+    <div id="explain">
+        <div id="etitle">
+            Explanation
+            <button id="etitlebtn" onclick="toggleExplanation()">✗</button>
+        </div>
+        <div id="explainc">
+        </div>
+    </div>
+</body>
+</html>

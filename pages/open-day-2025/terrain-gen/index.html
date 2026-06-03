@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Terrain Generation</title>
+  <script defer src="bundle.js"></script>
+
+  <meta property="og:title" content="Procedural Terrain Generation - Databased | Open Day 2025" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://databased.csa.iisc.ac.in/pages/open-day-2025/terrain-gen/" />
+  <meta property="og:image" content="https://databased.csa.iisc.ac.in/img/open-day-2025/terrain-gen.webp" />
+  <meta property="og:description" content="Learn how modern games build rich and dynamic worlds using procedural generation. This demo explores noise functions, biome generation, and randomness vs. control in the context of terrain creation. Experience our live visual demo to build your own virtual landscape!">
+  <meta name="twitter:card" content="app" />
+  <meta name="twitter:site" content="@databasedIISc" />
+  <meta name="description" content="Experience the magic behind world-building in games with Procedural Terrain Generation by Databased at IISc Open Day 2025. Play with biomes and noise-based maps in our live demo.">
+  <meta name="keywords" content="Procedural terrain generation demo IISc, Terrain generation in games, Perlin noise biomes, Open world game design, Procedural generation tools, Interactive CS demos, Databased Open Day 2025, World generation algorithms, Terrain generation visualization">
+
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <h1>Terrain Generation from Noise</h1>
+
+  <section>
+    <h2>Draw a Height Map</h2>
+    <figure class="two-canvas">
+      <canvas class="canvas-2d" id="brush-2d"></canvas>
+      <canvas class="canvas-3d" id="brush-3d"></canvas>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Varying Seed and Frequency</h2>
+    <figure class="two-canvas">
+      <canvas class="canvas-2d" id="seed-freq-2d"></canvas>
+      <canvas class="canvas-3d" id="seed-freq-3d"></canvas>
+    </figure>
+
+    Seed <input id="seed-freq-seed" type="range" min="1" max="10" step="1" value="1" list="seed-freq-seed-settings">
+    <datalist id="seed-freq-seed-settings">
+      <option>1</option>
+      <option>255</option>
+    </datalist>
+
+    Frequency <input id="seed-freq-freq" type="range" min="1" max="7" step="0.01" value="2"
+      list="seed-freq-freq-settings">
+    <datalist id="seed-freq-freq-settings">
+      <option>2</option>
+      <option>4</option>
+      <option>6</option>
+    </datalist>
+  </section>
+
+  <section>
+    <h2>Mixing Noise Functions</h2>
+    <figure class="two-canvas">
+      <canvas class="canvas-2d" id="octaves-2d"></canvas>
+      <canvas class="canvas-3d" id="octaves-3d"></canvas>
+    </figure>
+
+    Mixing Factor
+    <input id="octaves-slider" type="range" min="0" max="1" step="0.1" value="0" list="octaves-slider-settings">
+    <datalist id="octaves-slider-settings">
+      <option>0</option>
+      <option>1</option>
+    </datalist>
+  </section>
+
+  <section>
+    <h2>Putting It All Together</h2>
+    <figure class="two-canvas">
+      <canvas class="canvas-2d" id="game-2d"></canvas>
+      <canvas class="canvas-3d" id="game-3d"></canvas>
+    </figure>
+
+    Elevation Seed
+    <input id="game-elev-seed" type="range" min="0" max="10" step="1" value="0" list="game-elev-seed-settings">
+    <datalist id="game-freq-settings">
+      <option>2</option>
+      <option>7</option>
+    </datalist>
+
+    Octave
+    <input id="game-freq" type="range" min="0" max="1" step="0.05" value="0.3" list="game-freq-settings">
+    <datalist id="game-freq-settings">
+      <option>0.3</option>
+      <option>0.6</option>
+    </datalist>
+
+    Water
+    <input id="game-waterlevel" type="range" min="0.65" max="1" step="0.01" value="0.8" list="game-waterlevel-settings">
+    <datalist id="game-waterlevel-settings">
+      <option>0.75</option>
+      <option>0.8</option>
+      <option>0.9</option>
+    </datalist>
+
+    Moisture Seed
+    <input id="game-mois-seed" type="range" min="0" max="10" step="1" value="0" list="game-mois-seed-settings">
+    <datalist id="game-mois-seed-settings">
+      <option>2</option>
+      <option>7</option>
+    </datalist>
+  </section>
+</body>
+
+</html>

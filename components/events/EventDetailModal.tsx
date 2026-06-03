@@ -106,7 +106,7 @@ export default function EventDetailModal({ event, onClose }: EventDetailModalPro
           {event.image ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}`}
+              src={event.image.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}` : event.image}
               alt={event.title}
               className="w-full h-full object-contain bg-black/10"
             />

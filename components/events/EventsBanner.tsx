@@ -167,7 +167,7 @@ export default function EventsBanner({ events }: { events: Event[] }) {
               >
                 {event.image ? (
                   /* eslint-disable-next-line @next/next/no-img-element */
-                  <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}`} alt={event.title} className="w-full h-full object-cover" />
+                  <img src={event.image.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}` : event.image} alt={event.title} className="w-full h-full object-cover" />
                 ) : (
                   <>
                     {/* Decorative grid */}

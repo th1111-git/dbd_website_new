@@ -85,11 +85,11 @@
     "link": "/pages/math-sessions/"
   },
   {
-    "id": "paradox-ctf-2023",
-    "title": "Paradox CTF 2023",
-    "date": "2023-12-02",
-    "type": "CTF",
-    "description": "Beginner-friendly CTF focused on introductory security concepts — designed to onboard new students to the world of cybersecurity.",
+    "id": "paradox-festival-",
+    "title": "Paradox Festival",
+    "date": "2023-05-14",
+    "type": "Other",
+    "description": "An event introducing the audience to the world of paradoxes in science and mathematics — from Berry's Paradox to Banach-Tarski.",
     "link": "/pages/paradox/"
   },
   {

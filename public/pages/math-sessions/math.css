@@ -1,0 +1,136 @@
+body {
+  background-attachment: fixed;
+}
+
+/* #title {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%,  rgba(0, 0, 0, 0.7) 100%), url(../../img/backgroundsbundle/Kander.png);
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#title h1 {
+  font-size: 120px;
+  text-shadow: #000 0px 0px 5px;
+}
+
+#title h2 {
+  font-size: 60px;
+  text-shadow: #000 0px 0px 5px;
+} */
+
+main{
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px 0 20px 0;
+}
+
+main > h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+#session-list {
+  margin-top: 40px;
+}
+
+.session {
+  height: 70px;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset rgba(255, 255, 255) 0 0 5px;
+}
+
+.session.upcoming {
+  box-shadow: inset rgba(0, 200, 0) 0 0 5px;
+}
+
+.session-label {
+  font-size: 32px;
+  line-height: 40px;
+  float: left;
+}
+
+.session-button {
+  border: 2px #ffffff solid;
+  padding: 5px 10px 5px 10px;
+  height: 40px;
+  width: auto;
+  margin-left: 10px;
+  float: right;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: background-color 0.1s;
+}
+
+.session-button.disabled {
+  border: 2px #999 solid;
+  cursor: not-allowed;
+}
+
+.session-button.disabled:hover {
+  background-color: transparent;
+}
+
+.session-button.disabled span {
+  color: #999;
+}
+
+.session-button .material-symbols-outline {
+  line-height: 40px;
+}
+
+.session-button-icon {
+  height: 25px;
+}
+
+.session-button-label {
+  width: auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  margin-left: 10px;
+}
+
+.session-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 700px) {
+  .session {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .session-label {
+    float: none;
+  }
+
+  .session-button {
+    float: none;
+    margin: 10px 0;
+    justify-content: center;
+  }
+}

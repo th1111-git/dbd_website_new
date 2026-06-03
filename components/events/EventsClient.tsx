@@ -124,7 +124,7 @@ export default function EventsClient() {
         <SectionHeading
           eyebrow="Events"
           title="All Events"
-          subtitle="CTF competitions, tech talks, workshops, and more — everything we've hosted."
+          subtitle="CTF competitions, tech talks, workshops, and more."
         />
 
         <div className="mt-10">

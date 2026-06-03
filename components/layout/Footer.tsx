@@ -45,8 +45,7 @@ export default function Footer() {
               <span className="text-mono">data</span><span className="text-accent">based</span>
             </p>
             <p className="text-text-secondary text-sm leading-relaxed">
-              The undergraduate CS club at IISc, run by B.Tech.&nbsp;Mathematics and
-              Computing students under the CSA department.
+              The undergraduate CS club at IISc.
             </p>
           </div>
 

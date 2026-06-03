@@ -127,13 +127,6 @@ export default function EventDetailModal({ event, onClose }: EventDetailModalPro
             </div>
           )}
 
-          {/* Carousel indicators - matching the visual style of the screenshot */}
-          {event.image && (
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10 bg-black/30 px-2 py-1 rounded-full backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
-              <span className="w-1.5 h-1.5 rounded-full bg-white/40"></span>
-            </div>
-          )}
         </div>
 
         {/* Content details scrollable area */}

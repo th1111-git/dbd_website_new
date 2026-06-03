@@ -23,15 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch members from Airtable
-        run: node scripts/fetch-members.js
-        env:
-          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
 
-      - name: Fetch events from Airtable
-        run: node scripts/fetch-events.js
-        env:
-          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
 
       - name: Copy images to public directory
         run: cp -R img public/img

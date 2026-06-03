@@ -65,6 +65,7 @@ npm run lint
 | Variable | Description | Example |
 |---|---|---|
 | `NEXT_PUBLIC_BASE_PATH` | Subdirectory path for GitHub Pages | `/dbd_website_new` |
+| `AIRTABLE_API_KEY` | Read-only API key for fetching data | `patXXXXXXXXXXXXXX` |
 
 Create a `.env.local` file in the project root. Never commit it.
 
@@ -86,6 +87,12 @@ databasediisc.github.io/
 │   │   └── page.tsx              # /events — Events listing
 │   ├── blog/
 │   │   └── page.tsx              # /blog — Blog posts
+│   ├── pages/                    # Modernized event-specific pages
+│   │   ├── open-day-2024/page.tsx
+│   │   ├── open-day-2025/page.tsx
+│   │   ├── algorithms/page.tsx
+│   │   ├── hack-and-seek/page.tsx
+│   │   └── ideathon/page.tsx
 │   └── resources/
 │       └── page.tsx              # /resources — Learning resources
 │
@@ -95,8 +102,7 @@ databasediisc.github.io/
 │   │   ├── Footer.tsx            # Site footer with social links
 │   │   ├── BackgroundEffects.tsx # DotField canvas background (all pages)
 │   │   ├── InnerLayout.tsx       # Wrapper for Grainient background overlay
-│   │   ├── AnnouncementBanner.tsx# Dismissible top announcement banner
-│   │   └── ThemeToggle.tsx       # Dark / light mode toggle button
+│   │   └── AnnouncementBanner.tsx# Dismissible top announcement banner
 │   ├── home/
 │   │   ├── Hero.tsx              # Full-viewport hero section
 │   │   ├── AboutTeaser.tsx       # "Who we are" teaser with IISc sketch
@@ -131,16 +137,14 @@ databasediisc.github.io/
 │   └── iisc-linesketch.png       # IISc campus line-art illustration
 │
 ├── pages/                        # Legacy static event pages (separate from App Router)
-│   ├── algorithms/               # Algorithm Festival page
-│   ├── hack-and-seek/            # Hack and Seek CTF page
-│   ├── ideathon/                 # Ideathon event page
 │   ├── launch/                   # Club launch event page
 │   ├── math-sessions/            # Math Sessions page
-│   ├── open-day-2024/            # Open Day 2024 page
-│   ├── open-day-2025/            # Open Day 2025 (with interactive demos)
 │   ├── paradox/                  # Paradox CTF page
 │   ├── projects/                 # Projects page
 │   └── commons/                  # Shared legacy CSS/JS
+│
+├── scripts/
+│   └── fetch-airtable-data.js    # Build-time script to pull data from Airtable
 │
 ├── .github/
 │   └── workflows/
@@ -176,15 +180,7 @@ All colors are CSS custom properties defined in `app/globals.css`. Tailwind clas
 | `border-border` | `--c-border` | — | Default borders |
 | `border-border-subtle` | `--c-border-subtle` | — | Faint dividers |
 
-**Light mode** (toggled by `.light` class on `<html>`):
-
-| Token | Hex |
-|---|---|
-| `--c-bg-base` | `#f3f4f7` |
-| `--c-bg-surface` | `#ffffff` |
-| `--c-text-primary` | `#0e0f14` |
-| `--c-accent` | `#08941c` (darker for WCAG AA) |
-| `--c-mono` | `#c04400` (darker for WCAG AA) |
+*Note: The website is exclusively dark-mode to maintain a consistent cyber/hacker aesthetic.*
 
 **Accent usage rules:**
 - **Green** (`--c-accent`): active nav underline, primary button borders, focus rings, `<code>` text, card hover borders
@@ -304,11 +300,6 @@ Each resource shows a difficulty badge: **Beginner** · **Intermediate** · **Ad
 - Dismissible top banner (renders above navbar)
 - Content: recruitment message for 2025–26 coordinators
 - Dismiss state stored in component (resets on page reload)
-
-#### `ThemeToggle.tsx`
-- Reads `localStorage.theme`, falls back to `prefers-color-scheme`
-- Toggles `.light` class on `<html>`
-- Sun icon (light mode) · Moon icon (dark mode)
 
 #### `InnerLayout.tsx`
 - Wrapper that renders `Grainient` as a fixed background behind children
@@ -554,43 +545,27 @@ interface Resource {
 
 ## Adding Content
 
+### Airtable Sync
+
+Event and member data is managed in Airtable. During the GitHub Actions build process, `scripts/fetch-airtable-data.js` runs automatically, fetches the latest data from Airtable, and writes it to `data/events.json` and `data/members.json`.
+
+**To update data locally:**
+1. Ensure your `.env.local` has a valid `AIRTABLE_API_KEY`.
+2. Run `npm run dev` or `node scripts/fetch-airtable-data.js` to refresh the JSON files.
+
+*Note: You can manually edit the JSON files for local testing, but your changes will be overwritten by the Airtable sync during the next build.*
+
+---
+
 ### Add an event
 
-Edit `data/events.json`. Append to the array:
-
-```json
-{
-  "id": "my-event-2025",
-  "title": "My Event",
-  "date": "2025-09-14",
-  "type": "Workshop",
-  "description": "A one-line description of the event.",
-  "link": "https://example.com/my-event"
-}
-```
-
-The event appears automatically on `/events`. If the date is in the future relative to today, the card gets an accent-color border. To feature it on the home page, ensure it's among the 4 most recent entries (sorted by date descending in the JSON — keep it ordered).
+To add an event, add a row to the "Events" table in Airtable. Ensure all required fields are filled (Title, Date, Type, Description). If you upload an image to Airtable, it will be automatically linked. Alternatively, manual fallback events are hardcoded for edge cases directly in `events.json` (such as the legacy CTF / Algorithm Festival pages).
 
 ---
 
 ### Add a member
 
-Edit `data/members.json`:
-
-```json
-{
-  "name": "Full Name",
-  "role": "Role Title",
-  "year": "2026",
-  "category": "Core Team",
-  "links": {
-    "github": "https://github.com/username",
-    "linkedin": "https://linkedin.com/in/username"
-  }
-}
-```
-
-If `photo` is omitted, the member card shows a two-letter initials fallback.
+To add a member, add a row to the "Members" table in Airtable. The "Category" should be "Core Team" or "Coordinators". You can provide their GitHub and LinkedIn URLs directly in the table.
 
 ---
 
@@ -640,8 +615,9 @@ Pushing to `master` triggers the GitHub Actions workflow at `.github/workflows/d
 1. Checks out code
 2. Sets up Node 22 with npm cache
 3. Runs `npm ci`
-4. Runs `npm run build` with `NEXT_PUBLIC_BASE_PATH=/dbd_website_new`
-5. Deploys the `./out/` directory to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`
+4. Runs `node scripts/fetch-airtable-data.js` to pull fresh data (injecting `AIRTABLE_API_KEY` from GitHub Secrets).
+5. Runs `npm run build` with `NEXT_PUBLIC_BASE_PATH=/dbd_website_new`
+6. Deploys the `./out/` directory to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`
 
 GitHub Pages serves the `gh-pages` branch at the live URL.
 
@@ -706,10 +682,6 @@ Extends Tailwind with:
 ---
 
 ## Implementation Notes
-
-### Theme flash prevention
-
-`app/layout.tsx` injects a small inline `<script>` that runs synchronously before React hydrates. It reads `localStorage.theme` (or falls back to `prefers-color-scheme`) and applies the `.light` class to `<html>` before the first paint, preventing a flash of the wrong theme.
 
 ### CSS variables and Tailwind opacity
 

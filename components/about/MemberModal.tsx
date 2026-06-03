@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { Github, Linkedin, Mail, X } from 'lucide-react'
+import { Linkedin, Mail, X } from 'lucide-react'
 import type { Member } from './MemberCard'
 
 interface MemberModalProps {
@@ -47,7 +47,7 @@ export default function MemberModal({ member, onClose }: MemberModalProps) {
             exit={{ opacity: 0, scale: 0.94, y: 12 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-sm rounded-2xl border border-border bg-bg-surface p-8 flex flex-col items-center text-center gap-4 shadow-2xl"
+            className="relative w-full max-w-2xl rounded-2xl border border-border bg-bg-surface p-14 flex flex-col items-center text-center gap-6 shadow-2xl"
           >
             {/* Close button */}
             <button
@@ -60,17 +60,17 @@ export default function MemberModal({ member, onClose }: MemberModalProps) {
 
             {/* Avatar */}
             <div className="relative">
-              <div className="w-24 h-24 rounded-full overflow-hidden bg-accent-dim ring-2 ring-accent/30 flex items-center justify-center">
+              <div className="w-36 h-36 rounded-full overflow-hidden bg-accent-dim ring-2 ring-accent/30 flex items-center justify-center">
                 {member.photo ? (
                   <Image
-                    src={member.photo}
+                    src={member.photo.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.photo}` : member.photo}
                     alt={member.name}
-                    width={96}
-                    height={96}
+                    width={144}
+                    height={144}
                     className="object-cover w-full h-full"
                   />
                 ) : (
-                  <span className="font-display text-accent text-3xl font-bold">{initials}</span>
+                  <span className="font-display text-accent text-5xl font-bold">{initials}</span>
                 )}
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function MemberModal({ member, onClose }: MemberModalProps) {
 
             {/* Name + role */}
             <div className="space-y-1">
-              <h2 className="font-display font-bold text-2xl text-text-primary leading-tight">
+              <h2 className="font-display font-bold text-3xl text-text-primary leading-tight">
                 {member.name}
               </h2>
               <p className="font-mono text-xs text-accent">{member.role}</p>
@@ -129,7 +129,7 @@ export default function MemberModal({ member, onClose }: MemberModalProps) {
                     className="w-9 h-9 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
                     style={{ backgroundColor: '#24292e' }}
                   >
-                    <Github size={15} color="#fff" />
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                   </a>
                 )}
               </div>

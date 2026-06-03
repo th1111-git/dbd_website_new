@@ -1,34 +1,94 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import MemberCard from './MemberCard'
 import MemberModal from './MemberModal'
 import type { Member } from './MemberCard'
 
-const FILTERS = ['2026', '2025', '2024', '2023']
+const PROXY_URL = 'https://databased-airtable-proxy.databased-iisc.workers.dev/profiles'
 
-export default function MemberGrid({ members }: { members: Member[] }) {
-  const [active, setActive] = useState('2025')
+export default function MemberGrid() {
+  const [members, setMembers] = useState<Member[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
+  const [active, setActive] = useState('')
   const [selected, setSelected] = useState<Member | null>(null)
 
+  useEffect(() => {
+    fetch(PROXY_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        // Map Airtable response to Member interface
+        const parsedMembers: Member[] = data.records.map((record: any) => {
+          const f = record.fields;
+          const links: any = {};
+          if (f.GitHub) links.github = f.GitHub;
+          if (f.LinkedIn) links.linkedin = f.LinkedIn;
+          if (f.Email) links.email = f.Email;
+          
+          let photoPath = undefined;
+          if (f.Photo && f.Photo.length > 0) {
+            photoPath = f.Photo[0].url;
+          }
+
+          return {
+            name: (f.Name || '').trim(),
+            role: 'Member',
+            year: String(f.Batch ?? ''),
+            category: 'Members',
+            ...(f.Bio?.trim() ? { bio: f.Bio.trim() } : {}),
+            ...(photoPath ? { photo: photoPath } : {}),
+            ...(Object.keys(links).length ? { links } : {}),
+          };
+        });
+
+        setMembers(parsedMembers)
+        const years = [...new Set(parsedMembers.map((m) => m.year))].sort().reverse()
+        if (years.length) setActive(years[0])
+      })
+      .catch((err) => {
+        console.error("Failed to fetch members:", err)
+        setError(true)
+      })
+      .finally(() => setLoading(false))
+  }, [])
+
+  const years = [...new Set(members.map((m) => m.year))].sort().reverse()
   const filtered = members.filter((m) => m.year === active)
+
+  if (loading) {
+    return (
+      <div className="flex items-center gap-3 py-16 font-mono text-xs text-text-muted">
+        <span className="inline-block w-3 h-3 rounded-full border border-accent border-t-transparent animate-spin" />
+        Loading members…
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <p className="py-16 font-mono text-xs text-text-muted">
+        Failed to load members.
+      </p>
+    )
+  }
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2 mb-8" role="group" aria-label="Filter members">
-        {FILTERS.map((f) => (
+      <div className="flex flex-wrap gap-2 mb-8" role="group" aria-label="Filter by batch year">
+        {years.map((y) => (
           <button
-            key={f}
-            onClick={() => setActive(f)}
-            aria-pressed={active === f}
+            key={y}
+            onClick={() => setActive(y)}
+            aria-pressed={active === y}
             className={`font-mono text-xs px-3 py-1.5 rounded border transition-all duration-200 ${
-              active === f
+              active === y
                 ? 'bg-accent text-bg-base border-accent'
                 : 'bg-bg-surface text-text-secondary border-border hover:border-accent/40 hover:text-text-primary'
             }`}
           >
-            {f}
+            {y}
           </button>
         ))}
       </div>

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import membersData from '@/data/members.json'
 import MemberGrid from '@/components/about/MemberGrid'
 import SectionHeading from '@/components/ui/SectionHeading'
 import PageBackground from '@/components/layout/PageBackground'
@@ -52,7 +51,7 @@ export default function AboutPage() {
           subtitle="The people who make Databased what it is."
         />
         <div className="mt-10">
-          <MemberGrid members={membersData} />
+          <MemberGrid />
         </div>
       </section>
     </PageBackground>

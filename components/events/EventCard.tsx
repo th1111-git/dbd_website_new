@@ -8,7 +8,10 @@ export interface Event {
   type: string
   description: string
   link?: string | null
-  image?: string
+  image?: string | null
+  location?: string | null
+  topics?: string[]
+  audience?: string[]
 }
 
 function formatDate(dateStr: string) {
@@ -19,12 +22,15 @@ function formatDate(dateStr: string) {
   })
 }
 
-export default function EventCard({ event }: { event: Event }) {
+export default function EventCard({ event, onClick }: { event: Event; onClick?: () => void }) {
   const isPast = new Date(event.date) < new Date()
 
   return (
     <div
+      onClick={onClick}
       className={`h-full p-5 rounded-lg border transition-all duration-300 flex flex-col gap-3 group hover:-translate-y-0.5 ${
+        onClick ? 'cursor-pointer hover:shadow-lg hover:shadow-black/5' : ''
+      } ${
         isPast
           ? 'border-border bg-bg-surface hover:border-border/60'
           : 'border-accent/30 bg-bg-surface hover:border-accent/60'
@@ -37,6 +43,7 @@ export default function EventCard({ event }: { event: Event }) {
             href={event.link}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
             aria-label={`Open ${event.title}`}
             className="text-text-secondary hover:text-accent transition-colors"
           >

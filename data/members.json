@@ -1,72 +1,505 @@
 [
   {
-    "name": "Thrayambhakesh H",
-    "role": "President",
-    "year": "2025",
-    "category": "Core Team",
-    "links": {}
+    "name": "Mrigank Pawagi",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Looking for ways to look for ways.",
+    "photo": "/members/mrigankpawagi.jpg",
+    "links": {
+      "github": "https://github.com/mrigankpawagi",
+      "linkedin": "https://www.linkedin.com/in/mrigankpawagi/",
+      "email": "mrigankp@iisc.ac.in"
+    }
   },
   {
-    "name": "Aryan Gupta",
-    "role": "Vice President",
-    "year": "2025",
-    "category": "Core Team",
-    "links": {}
+    "name": "Sahil Chaudhary",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Just a regular guy trying his ways in probabilistic world. You can connect with me if you are into building things in tech, Games and business.",
+    "photo": "/members/sahilchaudhary.jpg",
+    "links": {
+      "github": "https://github.com/sahil-chaudhary",
+      "linkedin": "https://www.linkedin.com/in/sahil-chaudhary-a479a2197/",
+      "email": "sahilc@iisc.ac.in"
+    }
   },
   {
-    "name": "Priya Nair",
-    "role": "Technical Lead",
-    "year": "2025",
-    "category": "Core Team",
-    "links": {}
+    "name": "Armaan Khetarpaul",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Hey there! Let's grow and learn together.",
+    "photo": "/members/Armxyz1.jpg",
+    "links": {
+      "github": "https://github.com/Armxyz1",
+      "linkedin": "https://www.linkedin.com/in/armaan-khetarpaul-63aa12277/",
+      "email": "armaank@iisc.ac.in"
+    }
   },
   {
-    "name": "Rahul Sharma",
-    "role": "CTF Lead",
-    "year": "2025",
-    "category": "Core Team",
-    "links": {}
+    "name": "Shankaradithyaa Venkateswaran",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Just an Iiscian trying to live life.",
+    "photo": "/members/shankaradithyaa.jpg",
+    "links": {
+      "github": "https://github.com/omegasun18",
+      "linkedin": "https://www.linkedin.com/in/shankaradithyaa-venkateswaran-12a283262/",
+      "email": "shankaradith@iisc.ac.in"
+    }
   },
   {
-    "name": "Siddharth Rao",
-    "role": "Competitive Programming Lead",
-    "year": "2025",
-    "category": "Core Team",
-    "links": {}
+    "name": "Ishaq Hamza",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "I am Ishaq, enthusiastic about various aspects of theoretical CS and applied math. Hoping to chase my entrepreneurial dreams in the deep tech space.",
+    "photo": "/members/IshaqHamza.jpg",
+    "links": {
+      "github": "https://github.com/IshaqHamza",
+      "linkedin": "www.linkedin.com/in/ IshaqHamza",
+      "email": "ishaqhamza@iisc.ac.in"
+    }
   },
   {
-    "name": "Ananya Iyer",
-    "role": "Events Coordinator",
-    "year": "2025",
-    "category": "Coordinators",
-    "links": {}
+    "name": "Aditya Gupta",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Hello, I am Aditya from Ahmedabad. I have always enjoyed math and love to apply it through programming. I also have a keen interest in astronomy. My hobbies are badminton, table tennis and gaming.",
+    "photo": "/members/adityagupta.jpg",
+    "links": {
+      "github": "https://github.com/Adityapgupta",
+      "linkedin": "https://www.linkedin.com/in/aditya-gupta-4787b0252",
+      "email": "adityapg@iisc.ac.in"
+    }
   },
   {
-    "name": "Kiran Reddy",
-    "role": "Web Coordinator",
-    "year": "2025",
-    "category": "Coordinators",
-    "links": {}
+    "name": "Sathvik Manthri",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "photo": "/members/MSathvik.jpg",
+    "links": {
+      "github": "https://github.com/Sathvik040105",
+      "linkedin": "https://www.linkedin.com/in/",
+      "email": "sathvikm@iisc.ac.in"
+    }
   },
   {
-    "name": "Meera Krishnan",
-    "role": "Design Coordinator",
-    "year": "2025",
-    "category": "Coordinators",
-    "links": {}
+    "name": "Ayush Raina",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Data Science ❣️",
+    "photo": "/members/ayushraina.jpg",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/ayushrainaiisc",
+      "email": "ayushraina@iisc.ac.in"
+    }
   },
   {
-    "name": "Aditya Verma",
-    "role": "Outreach Coordinator",
-    "year": "2025",
-    "category": "Coordinators",
-    "links": {}
+    "name": "Rk Shishir",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "photo": "/members/rkshishir.jpg",
+    "links": {
+      "github": "https://github.com/Shishir1729",
+      "linkedin": "https://www.linkedin.com/in/shishir-r-k-4428ab252",
+      "email": "shishirr@iisc.ac.in"
+    }
   },
   {
-    "name": "Sneha Pillai",
-    "role": "Workshop Coordinator",
-    "year": "2025",
-    "category": "Coordinators",
-    "links": {}
+    "name": "Yukta Subramanian",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "bio": "Driven by curiosity",
+    "photo": "/members/SYUKTA.jpg",
+    "links": {
+      "github": "YUKTA-S",
+      "linkedin": "Yukta Subramanian",
+      "email": "yuktas@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Nagasai",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "links": {
+      "github": "https://github.com/Nagasai561",
+      "linkedin": "https://www.linkedin.com/in/nagasai-jajapuram-1b8a73273",
+      "email": "nagasaij@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Sharath",
+    "role": "Member",
+    "year": "2022",
+    "category": "Members",
+    "links": {
+      "github": "https://github.com/sharaths21312/",
+      "linkedin": "https://www.linkedin.com/in/sharath-s-13425a259/",
+      "email": "ssharath@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Keval Pithadiya",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Always diving deeper",
+    "photo": "/members/kevalp.jpg",
+    "links": {
+      "github": "https://github.com/kevalpithadiya",
+      "linkedin": "https://www.linkedin.com/in/keval-pithadiya/",
+      "email": "kevalp@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Siddharth Reddy",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Trying to arrange the best permutation of 0s and 1s !",
+    "photo": "/members/SidZRed.jpg",
+    "links": {
+      "github": "https://github.com/SidZRed",
+      "linkedin": "https://www.linkedin.com/in/siddharth-reddy-a56521282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "email": "siddharthrr@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Pratham Gupta",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "I am an enthusiastic undergraduate student pursuing a BTech in Mathematics and Computing at the Indian Institute of Science. My academic and research interests span robotics, machine learning, computer vision, quantum computing, algorithms, and mathematics in general. I am passionate about exploring and mastering these cutting-edge fields, driven by a curiosity to learn and innovate.",
+    "photo": "/members/Pratham_Gupta.jpg",
+    "links": {
+      "github": "https://github.com/PrathamGupta423",
+      "linkedin": "https://www.linkedin.com/in/prathamg423/",
+      "email": "Prathamgupta@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Anirudh Gupta",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "I am a UG student in Btech studying at IISc, Bangalore. I work hard for my dreams, and I am eager to learn, achieve and be REAL!",
+    "photo": "/members/Anirudh_Gupta.jpg",
+    "links": {
+      "github": "https://github.com/AnirudhG07",
+      "linkedin": "https://www.linkedin.com/in/anirudh-gupta-45a52b295/",
+      "email": "anirudhgupta@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Debanjan Saha",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/deban9017.jpg",
+    "links": {
+      "github": "https://github.com/deban9017",
+      "linkedin": "https://www.linkedin.com/in/debanjan-saha-a7280927b",
+      "email": "debanjansaha@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Abhinav Goyal",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "I am Abhinav Goyal, currently a 1st year undergraduate student at IISc, studying BTech in Mathematics and Computing. My interests include coding, statistical analysis and problem solving in general. I cater to learn AI and ML and other interesting topics.",
+    "photo": "/members/Abhi_47.jpg",
+    "links": {
+      "github": "https://github.com/Abhinavg00",
+      "linkedin": "https://www.linkedin.com/in/abhinav-goyal-420676290/",
+      "email": "abhinavgoyal@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Pritesh Jogdhankar",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/PRITESH.jpg",
+    "links": {
+      "github": "https://github.com/pritesh299",
+      "linkedin": "https://www.linkedin.com/in/pritesh-jogdhankar-167630270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "email": "priteshr@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Swarnava Chakraborty",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/swarnava2005.jpg",
+    "links": {
+      "github": "https://github.com/swarnava1207",
+      "linkedin": "https://www.linkedin.com/in/swarnava-chakraborty-a2a12028b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "email": "swarnavac@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Kuldeep Jatav",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/Kuldeep1709.jpg",
+    "links": {
+      "github": "https://github.com/Kuldeep1709",
+      "linkedin": "https://www.linkedin.com/in/kuldeep-3604b327a",
+      "email": "kuldeepjatav@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Sehaj Ganjoo",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Currently discovereing that \"It works on my machine\" is not a valid excuse.",
+    "photo": "/members/gseha21.jpg",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/sehaj-ganjoo-4b8b57283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "email": "sehajganjoo@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Shobhnik Kriplani",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Crafting optimal digital configurations with precision.",
+    "photo": "/members/Shobhnik.jpg",
+    "links": {
+      "github": "https://github.com/ishobhnik",
+      "linkedin": "https://www.linkedin.com/in/shobhnik/",
+      "email": "shobhnikk@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Adithya K Anil",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Bugs are pretty good at teaching computer science tbh :)",
+    "photo": "/members/adithya_ka.jpg",
+    "links": {
+      "github": "https://github.com/adithyaka3",
+      "linkedin": "https://www.linkedin.com/in/adithya-k-anil-151528282/",
+      "email": "adithyaka@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Omar Muhammad",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/omar.jpg",
+    "links": {
+      "github": "https://github.com/omar826",
+      "linkedin": "https://www.linkedin.com/in/omar-muhammad-72631b231/",
+      "email": "omarmuhammad@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Kintan Saha",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "Trying to survive",
+    "photo": "/members/kintansaha.jpg",
+    "links": {
+      "github": "https://github.com/sahakintan",
+      "linkedin": "https://www.linkedin.com/in/kintan-saha-6620122a6/",
+      "email": "kintansaha@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Om Prakash",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/Om2005Prakash.jpg",
+    "links": {
+      "github": "https://github.com/Om2005Prakash",
+      "linkedin": "https://in.linkedin.com/in/om-prakash-7b1244272",
+      "email": "omprakashc@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Harisrrinivas V",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "photo": "/members/harisrrinivas.jpg",
+    "links": {
+      "github": "https://github.com/harisrrinivas",
+      "linkedin": "https://www.linkedin.com/in/harisrrinivas",
+      "email": "harisrriniva@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Aditya Arsh",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "i like computers",
+    "photo": "/members/adityaarsh.jpg",
+    "links": {
+      "github": "https://github.com/chocabloc",
+      "linkedin": "https://www.linkedin.com/in/aditya-arsh-39a4a6200",
+      "email": "adityaarsh@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Jithendra Rao Kasibhatla",
+    "role": "Member",
+    "year": "2023",
+    "category": "Members",
+    "bio": "I really enjoy the essence of problem solving and the like. I'm a massive MMA fan and love reading manga in my free time.",
+    "photo": "/members/G2.jpg",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/jithendra-rao-kasibhatla-a5593627b",
+      "email": "jithendrarao@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Aditya Thakkar",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Involved across the stack — from dev to design to direction. I thrive on collaboration, care about clean systems, and love shaping ideas into code. Currently exploring Rust, Type Systems, AI/ML, graphics, and creative dev tooling.",
+    "photo": "/members/Aditya-Thakkar.jpg",
+    "links": {
+      "github": "https://github.com/Aditya-A-Thakkar",
+      "linkedin": "https://www.linkedin.com/in/aditya-a-thakkar",
+      "email": "adityaat@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Aditey Nandan",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Exploring the world through theory, algorithms, and data. If you're into building things at the intersection of math, code, and curiosity let’s connect.",
+    "photo": "/members/Nandan-Aditey.jpg",
+    "links": {
+      "github": "https://github.com/Nandan-Aditey",
+      "linkedin": "https://www.linkedin.com/in/aditey-nandan/",
+      "email": "aditeyn@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Agrim Arsh",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "photo": "/members/AgrimArsh.jpg",
+    "links": {
+      "github": "https://github.com/agrimarsh",
+      "linkedin": "https://www.linkedin.com/in/agrim-arsh-1874b4211/",
+      "email": "agrim1@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Pragnya Yadav",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "I like messing around with ideas and seeing what comes out of them. Mostly here to learn and have a good time with the team.",
+    "photo": "/members/o7PY.jpg",
+    "links": {
+      "github": "https://github.com/o7PY",
+      "linkedin": "https://www.linkedin.com/in/pragnyay/",
+      "email": "pragnyay@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Shankhadeep Ghosh",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Still need to think a lot more about how to think",
+    "photo": "/members/shankhadeepg.jpg",
+    "links": {
+      "github": "https://github.com/shankha013k267",
+      "linkedin": "https://www.linkedin.com/in/shankhadeep-ghosh-659ba6314",
+      "email": "shankhadeepg@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Rishe Raghavendira G",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Living in a loop of math, CS and the occasional existential crisis.",
+    "photo": "/members/coder-2.jpg",
+    "links": {
+      "github": "https://github.com/coder-r2",
+      "linkedin": "https://www.linkedin.com/in/rishe-raghavendira-g-aa052a271",
+      "email": "risheg@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Sudarshana Chaitanya",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "A cricket guy trying to do stuff other than cricket or fit it into his work. That aside, I am into computer architecture and graphics though I have a lot to learn before I call myself an enthusiast. Peace!",
+    "photo": "/members/Dasa108.jpg",
+    "links": {
+      "github": "https://github.com/Dasa108",
+      "linkedin": "https://www.linkedin.com/in/sudarshana-chaitanya-b-n-935167319",
+      "email": "sudarshanab@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Palak Raisinghani",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Driven by a love for math and logical thinking, I find joy in tackling algorithmic challenge. I'm currently focused on advancing my coding proficiency and sharpening my problem-solving toolkit. At Databased, I’m eager to grow with the community and make it a platform for collaboration and building up for all involved",
+    "photo": "/members/Pal-R-S.jpg",
+    "links": {
+      "github": "https://github.com/Pal-R-S",
+      "linkedin": "https://www.linkedin.com/in/palak-raisinghani-656bab321/",
+      "email": "palakr@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Hasini G",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "Math brain with a CTF obsession. Loves cracking codes, breaking binaries, and proving theorems for fun. Running on caffeine and curiosity. Always chasing the next puzzle.",
+    "photo": "/members/infectia.jpg",
+    "links": {
+      "github": "https://github.com/infectia",
+      "linkedin": "https://www.linkedin.com/in/hasini-g-025300334",
+      "email": "hasinig@iisc.ac.in"
+    }
+  },
+  {
+    "name": "Ramnath",
+    "role": "Member",
+    "year": "2024",
+    "category": "Members",
+    "bio": "A traveller, I, seek joy in Nature, trying to paint her poems, recite her numbers and stitch her bits and qubits.",
+    "photo": "/members/ramnathiisc.jpg",
+    "links": {
+      "github": "https://github.com/ramnathiisc",
+      "linkedin": "https://www.linkedin.com/in/ramnath-senthil-manohar-76bb43328",
+      "email": "ramnaths@iisc.ac.in"
+    }
   }
 ]

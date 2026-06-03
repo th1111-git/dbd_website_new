@@ -5,3 +5,8 @@ node_modules/
 .DS_Store
 .next/
 out/
+.env*
+data/members-generated.json
+data/events-generated.json
+public/events/attachments/*
+public/img

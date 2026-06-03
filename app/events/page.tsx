@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import eventsData from '@/data/events.json'
 import EventsClient from '@/components/events/EventsClient'
 
 export const metadata: Metadata = {
@@ -7,5 +6,5 @@ export const metadata: Metadata = {
 }
 
 export default function EventsPage() {
-  return <EventsClient events={eventsData} />
+  return <EventsClient />
 }

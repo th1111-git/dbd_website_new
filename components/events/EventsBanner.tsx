@@ -19,10 +19,20 @@ function formatDate(dateStr: string) {
   })
 }
 
+const BANNER_EVENT_IDS = [
+  'open-day-2024',
+  'iisc-open-day-2024',
+  'open-day-2025',
+  'iisc-open-day-2025',
+  'hack-and-seek-2025',
+  'algorithm-festival-2024',
+  'ideathon-2024',
+]
+
 export default function EventsBanner({ events }: { events: Event[] }) {
   const recent = [...events]
+    .filter(e => BANNER_EVENT_IDS.includes(e.id))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 5)
 
   const [index, setIndex] = useState(0)
   const [progress, setProgress] = useState(0)
@@ -102,10 +112,10 @@ export default function EventsBanner({ events }: { events: Event[] }) {
         </div>
 
         {/* Main body: text + thumbnail */}
-        <div className="flex-1 flex overflow-hidden">
+        <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
 
           {/* Text content */}
-          <div className="flex-1 flex flex-col justify-center px-8 py-6 overflow-hidden">
+          <div className="flex-1 flex flex-col justify-center px-4 md:px-8 py-6 overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={event.id}
@@ -138,8 +148,8 @@ export default function EventsBanner({ events }: { events: Event[] }) {
             </AnimatePresence>
           </div>
 
-          {/* Thumbnail — half width */}
-          <div className="w-1/2 shrink-0 border-l border-border/50 p-5 flex items-center justify-center">
+          {/* Thumbnail — half width (hidden on mobile to save vertical space) */}
+          <div className="hidden md:flex w-1/2 shrink-0 border-l border-border/50 p-5 items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={event.id}
@@ -156,7 +166,7 @@ export default function EventsBanner({ events }: { events: Event[] }) {
               >
                 {event.image ? (
                   /* eslint-disable-next-line @next/next/no-img-element */
-                  <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
+                  <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}`} alt={event.title} className="w-full h-full object-cover" />
                 ) : (
                   <>
                     {/* Decorative grid */}
@@ -193,12 +203,12 @@ export default function EventsBanner({ events }: { events: Event[] }) {
         </div>
 
         {/* Bottom: event list strip */}
-        <div className="flex border-t border-border/50">
+        <div className="flex overflow-x-auto md:overflow-visible border-t border-border/50 scrollbar-none">
           {recent.map((e, i) => (
             <button
               key={e.id}
               onClick={() => go(i)}
-              className="flex-1 px-4 py-3 text-left border-r border-border/50 last:border-r-0 transition-colors duration-200 group"
+              className="flex-1 min-w-[140px] md:min-w-0 px-4 py-3 text-left border-r border-border/50 last:border-r-0 transition-colors duration-200 group shrink-0"
               style={{ background: i === index ? `${color}08` : 'transparent' }}
             >
               <p

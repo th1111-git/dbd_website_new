@@ -5,15 +5,17 @@
     "date": "2025-02-23",
     "type": "Other",
     "description": "Databased's showcase at IISc Open Day 2025 — interactive demos including terrain generation, Nim game, Tic-Tac-Toe with AI, and cryptography challenges.",
-    "link": "https://databased.csa.iisc.ac.in/pages/open-day-2025/"
+    "link": "/pages/open-day-2025/",
+    "image": "/img/open-day-2025/team.webp"
   },
   {
-    "id": "hack-and-seek-2024",
-    "title": "Hack and Seek 2024",
-    "date": "2024-08-15",
+    "id": "hack-and-seek-2025",
+    "title": "Hack and Seek 2025",
+    "date": "2025-08-01",
     "type": "CTF",
-    "description": "Annual internal Capture the Flag competition testing skills in web exploitation, cryptography, reverse engineering, forensics, and binary exploitation.",
-    "link": "https://databased.csa.iisc.ac.in/pages/hack-and-seek/"
+    "description": "Capture the Flag competition testing skills in web exploitation, cryptography, reverse engineering, forensics, and binary exploitation.",
+    "link": "/pages/hack-and-seek/",
+    "image": "/img/hack-and-seek/abcd.png"
   },
   {
     "id": "algorithm-festival-2024",
@@ -21,7 +23,8 @@
     "date": "2024-04-20",
     "type": "Competition",
     "description": "A day-long competitive programming contest with problems from beginner to expert difficulty, featuring live rankings and prizes.",
-    "link": "https://databased.csa.iisc.ac.in/pages/algorithms/"
+    "link": "/pages/algorithms/",
+    "image": "/img/algorithms/group-pic.webp"
   },
   {
     "id": "ideathon-2024",
@@ -29,7 +32,8 @@
     "date": "2024-11-05",
     "type": "Competition",
     "description": "A 24-hour hackathon-style ideathon where teams pitched and prototyped solutions to real-world problems using data science and AI.",
-    "link": "https://databased.csa.iisc.ac.in/pages/ideathon/"
+    "link": "/pages/ideathon/",
+    "image": "/img/ideathon/ideathon_presentation.webp"
   },
   {
     "id": "open-day-2024",
@@ -37,7 +41,8 @@
     "date": "2024-02-24",
     "type": "Other",
     "description": "Our Open Day booth featured interactive exhibits on algorithms, computer vision, and cybersecurity for school students and visitors.",
-    "link": "https://databased.csa.iisc.ac.in/pages/open-day-2024/"
+    "link": "/pages/open-day-2024/",
+    "image": "/img/open-day-2024/team.webp"
   },
   {
     "id": "ml-workshop-2024",
@@ -77,7 +82,7 @@
     "date": "2024-03-01",
     "type": "Workshop",
     "description": "Five-session series covering discrete math, combinatorics, probability, and linear algebra — essential foundations for any CS student.",
-    "link": "https://databased.csa.iisc.ac.in/pages/math-sessions/"
+    "link": "/pages/math-sessions/"
   },
   {
     "id": "paradox-ctf-2023",
@@ -85,7 +90,7 @@
     "date": "2023-12-02",
     "type": "CTF",
     "description": "Beginner-friendly CTF focused on introductory security concepts — designed to onboard new students to the world of cybersecurity.",
-    "link": "https://databased.csa.iisc.ac.in/pages/paradox/"
+    "link": "/pages/paradox/"
   },
   {
     "id": "launch-2023",
@@ -93,6 +98,6 @@
     "date": "2023-09-15",
     "type": "Other",
     "description": "The inaugural event of Databased — introducing the club, its vision, and the activities planned for the year to new B.Tech. students.",
-    "link": "https://databased.csa.iisc.ac.in/pages/launch/"
+    "link": "/pages/launch/"
   }
 ]

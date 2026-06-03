@@ -50,7 +50,7 @@ fetch(
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
-            Authorization: `Bearer pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409`,
+            Authorization: `Bearer YOUR_AIRTABLE_TOKEN_HERE`,
         },
     }
 ).then(response => {

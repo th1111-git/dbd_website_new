@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
+import Link from 'next/link'
 import type { Event } from './EventCard'
 
 const TYPE_COLOR: Record<string, string> = {
@@ -134,7 +135,7 @@ export default function EventsBanner({ events }: { events: Event[] }) {
                   {event.description}
                 </p>
                 {event.link && (
-                  <a
+                  <Link
                     href={event.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -142,7 +143,7 @@ export default function EventsBanner({ events }: { events: Event[] }) {
                     style={{ color }}
                   >
                     View More <ExternalLink size={11} />
-                  </a>
+                  </Link>
                 )}
               </motion.div>
             </AnimatePresence>

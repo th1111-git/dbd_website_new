@@ -1,5 +1,6 @@
 import { ExternalLink, Calendar } from 'lucide-react'
 import Tag from '@/components/ui/Tag'
+import Link from 'next/link'
 
 export interface Event {
   id: string
@@ -39,7 +40,7 @@ export default function EventCard({ event, onClick }: { event: Event; onClick?: 
       <div className="flex items-start justify-between gap-2">
         <Tag type={event.type as Parameters<typeof Tag>[0]['type']}>{event.type}</Tag>
         {event.link && (
-          <a
+          <Link
             href={event.link}
             target="_blank"
             rel="noopener noreferrer"
@@ -48,7 +49,7 @@ export default function EventCard({ event, onClick }: { event: Event; onClick?: 
             className="text-text-secondary hover:text-accent transition-colors"
           >
             <ExternalLink size={13} />
-          </a>
+          </Link>
         )}
       </div>
 

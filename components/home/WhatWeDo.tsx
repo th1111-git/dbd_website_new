@@ -15,7 +15,7 @@ const activities = [
     icon: Shield,
     title: 'Capture the Flag',
     description:
-      'Cybersecurity competitions covering pwn, crypto, forensics, web exploitation, and reverse engineering.',
+      'CTF competitions covering pwn, crypto, forensics, web exploitation, and reverse engineering.',
   },
   {
     icon: Presentation,
@@ -38,7 +38,7 @@ export default function WhatWeDo() {
         <SectionHeading
           eyebrow="Activities"
           title="What we do"
-          subtitle="From competitive programming to security research, we cover the full spectrum of computer science."
+          subtitle="From competitive programming to cybersecurity, we cover the full spectrum of computer science."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">

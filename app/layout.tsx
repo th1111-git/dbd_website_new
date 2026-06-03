@@ -10,11 +10,11 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 const leagueSpartan = League_Spartan({ subsets: ['latin'], variable: '--font-display', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: { default: 'Databased — IISc Undergraduate CS Club', template: '%s | Databased' },
+  title: { default: "Databased | IISc's Undergraduate CS Club", template: "%s | Databased" },
   description: 'The undergraduate Computer Science club at IISc, run by B.Tech. Mathematics and Computing students under the CSA department.',
   keywords: ['IISc', 'computer science', 'club', 'Databased', 'mathematics', 'computing', 'CTF', 'competitive programming'],
   openGraph: {
-    title: 'Databased — IISc Undergraduate CS Club',
+    title: "Databased | IISc's Undergraduate CS Club",
     description: 'The undergraduate Computer Science club at IISc.',
     type: 'website',
     siteName: 'Databased',

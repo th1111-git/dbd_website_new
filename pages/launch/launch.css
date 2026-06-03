@@ -1,0 +1,79 @@
+#title {
+    display: grid;
+    min-height: 100vh;
+    font-size: 2.5em;
+    text-align: center;
+    align-items: center;
+    background-image: url("../../img/backgroundsbundle/Taieri.png");
+}
+
+#timeline-container {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#timeline {
+    display: grid;
+    grid-template-columns: 3px 1fr;
+}
+
+#timeline-line {
+    background-color: white;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: span 100;
+    height: 100%;
+}
+
+.event-container {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    grid-column: 2;
+}
+
+.event-container::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(85, 103, 90);
+    border: 4px solid lightgreen;
+    position: relative;
+    left: -13px;
+    margin-right: none;
+}
+
+.day {
+    text-align: left;
+    grid-column: 2;
+    padding: 60px 0px 0 40px;
+    width: fit-content;
+    margin: 0;
+}
+
+.event-title {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 4px 0px 4px 40px;
+}
+
+.event-timing {
+    font-size: 0.9rem;
+    text-align: left;
+    color: lightgrey;
+    padding: 1px 0px 1px 40px;
+}
+.event-description {
+    padding: 5px 0px 0px 40px;
+    text-align: left;
+}
+
+#join-us-text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-block: 50px;
+}

@@ -6,7 +6,8 @@ import MemberCard from './MemberCard'
 import MemberModal from './MemberModal'
 import type { Member } from './MemberCard'
 
-const PROXY_URL = 'https://databased-airtable-proxy.databased-iisc.workers.dev/profiles'
+const AIRTABLE_URL = 'https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles?maxRecords=1000&view=Grid%20view'
+const AIRTABLE_TOKEN = 'pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409'
 
 export default function MemberGrid() {
   const [members, setMembers] = useState<Member[]>([])
@@ -16,7 +17,11 @@ export default function MemberGrid() {
   const [selected, setSelected] = useState<Member | null>(null)
 
   useEffect(() => {
-    fetch(PROXY_URL)
+    fetch(AIRTABLE_URL, {
+      headers: {
+        Authorization: `Bearer ${AIRTABLE_TOKEN}`
+      }
+    })
       .then((res) => res.json())
       .then((data) => {
         // Map Airtable response to Member interface
@@ -59,10 +64,7 @@ export default function MemberGrid() {
 
   if (loading) {
     return (
-      <div className="flex items-center gap-3 py-16 font-mono text-xs text-text-muted">
-        <span className="inline-block w-3 h-3 rounded-full border border-accent border-t-transparent animate-spin" />
-        Loading members…
-      </div>
+      <div className="py-16 min-h-[200px]"></div>
     )
   }
 

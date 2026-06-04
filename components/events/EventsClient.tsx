@@ -4,14 +4,15 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import EventCard from './EventCard'
 import EventFilters from './EventFilters'
-import EventsBanner from './EventsBanner'
+import MobileEventsBanner from './MobileEventsBanner'
 import EventDetailModal from './EventDetailModal'
 import SectionHeading from '@/components/ui/SectionHeading'
 import type { Event } from './EventCard'
 import PageBackground from '@/components/layout/PageBackground'
 import eventsData from '@/data/events.json'
 
-const PROXY_URL = 'https://databased-airtable-proxy.databased-iisc.workers.dev/events'
+const AIRTABLE_URL = 'https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Events?view=Grid%20view'
+const AIRTABLE_TOKEN = 'pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409'
 
 function mapType(airtableType: string, name: string = "") {
   if (name.toLowerCase().includes('ctf') || name.toLowerCase().includes('capture the flag')) {
@@ -25,14 +26,18 @@ function mapType(airtableType: string, name: string = "") {
 }
 
 export default function EventsClient() {
-  const [events, setEvents] = useState<Event[]>([])
+  const [events, setEvents] = useState<Event[]>(eventsData as Event[])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const [activeFilter, setActiveFilter] = useState('All')
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
 
   useEffect(() => {
-    fetch(PROXY_URL)
+    fetch(AIRTABLE_URL, {
+      headers: {
+        Authorization: `Bearer ${AIRTABLE_TOKEN}`
+      }
+    })
       .then(res => res.json())
       .then(data => {
         const parsedEvents: Event[] = data.records.map((record: any) => {
@@ -96,16 +101,7 @@ export default function EventsClient() {
   const filtered =
     activeFilter === 'All' ? events : events.filter((e) => e.type === activeFilter)
 
-  if (loading) {
-    return (
-      <PageBackground>
-        <div className="flex justify-center items-center h-screen font-mono text-sm text-text-secondary">
-          <span className="inline-block w-4 h-4 rounded-full border-2 border-accent border-t-transparent animate-spin mr-3" />
-          Loading events...
-        </div>
-      </PageBackground>
-    )
-  }
+
 
   if (error) {
     return (
@@ -119,7 +115,7 @@ export default function EventsClient() {
 
   return (
     <PageBackground>
-      <EventsBanner events={events} />
+      <MobileEventsBanner events={events} />
       <div className="max-w-6xl mx-auto px-6 py-16">
         <SectionHeading
           eyebrow="Events"

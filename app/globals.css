@@ -87,3 +87,22 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ─── Old Website Loader ─────────────────────────────────────────────────── */
+.legacy-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: linear-gradient(230deg, #180834, #26032c, #101010);
+  background-size: 600% 600%;
+  animation: loader-bg 3s ease infinite;
+}
+
+@keyframes loader-bg {
+  0%{background-position:50% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}

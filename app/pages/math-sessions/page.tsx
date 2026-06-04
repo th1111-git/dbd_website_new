@@ -28,7 +28,7 @@ export interface MathSession {
 }
 
 async function fetchMathSessions(): Promise<MathSession[]> {
-  const apiKey = process.env.AIRTABLE_API_KEY
+  const apiKey = process.env.AIRTABLE_API_KEY || 'pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409'
   if (!apiKey) {
     console.warn('[math-sessions] AIRTABLE_API_KEY not set — skipping fetch.')
     return []

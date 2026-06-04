@@ -28,17 +28,7 @@ export default function BlogPage() {
 
         <div className="mt-12 p-5 bg-bg-surface rounded-lg border border-border">
           <p className="font-mono text-sm text-text-secondary">
-            <span className="text-accent">$</span> More posts coming soon. The blog is
-            powered by MDX — contributions are welcome via{' '}
-            <a
-              href="https://github.com/databasediisc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:underline"
-            >
-              GitHub
-            </a>
-            .
+            <span className="text-accent">$</span> Posts coming soon...
           </p>
         </div>
       </div>

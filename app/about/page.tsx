@@ -11,40 +11,33 @@ export default function AboutPage() {
   return (
     <PageBackground>
       {/* About text */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-8">
         <div className="max-w-2xl">
           <SectionHeading eyebrow="About" title="Who we are" />
           <div className="mt-8 space-y-4 text-text-secondary leading-relaxed">
             <p>
-              Databased is the undergraduate computer science club at the Indian Institute
-              of Science (IISc), Bengaluru. We are run by B.Tech. Mathematics and Computing
-              students under the Department of Computational and Data Sciences (CDS),
-              supervised by Prof. Chiranjib Bhattacharya.
+              Databased serves as the official undergraduate computer science club at the Indian Institute of Science, Bengaluru. The club is managed by undergraduate students from the Mathematics and Computing program, guided by Prof. Chiranjib Bhattacharya.
             </p>
             <p>
-              Our goal is to build a thriving community of students passionate about
-              computer science — from theoretical algorithms to practical systems,
-              competitive programming to cybersecurity research. We believe in learning
-              by doing, and every event we host reflects that.
+              The club exists to connect students who care about computer science in all its forms. Whether you are interested in theoretical computer science, building software systems, competing in programming contests, or studying cybersecurity, this is a community for hands-on application.
             </p>
             <p>
-              We host events throughout the academic year: workshops, CTF competitions,
-              tech talks from researchers and industry leaders, and collaborative
-              hackathons. Everyone is welcome — beginners and experts alike.
+              We organize a steady schedule of events during the year. These include collaborative hackathons, competitive CTFs, technical workshops, and guest lectures from industry leaders. Our events are open to everyone from absolute beginners to advanced developers.
             </p>
           </div>
-
+          {/*
           <div className="mt-8 p-4 bg-bg-surface rounded-lg border border-border">
             <p className="font-mono text-xs text-text-secondary">
               <span className="text-accent">Supervised by</span>{' '}
               Prof. Chiranjib Bhattacharya, CSA Department, IISc Bengaluru
-            </p>
+            </p> 
           </div>
+          */}
         </div>
       </section>
 
       {/* Members */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 pt-8 pb-20">
         <SectionHeading
           eyebrow="Team"
           title="Members"

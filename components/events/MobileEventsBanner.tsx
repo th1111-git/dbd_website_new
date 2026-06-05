@@ -163,7 +163,7 @@ export default function MobileEventsBanner({ events }: { events: Event[] }) {
           {/* Body: text + thumbnail */}
           <div className="flex-1 flex flex-row overflow-hidden">
             {/* Text content */}
-            <div className="w-[45%] shrink-0 flex flex-col justify-center px-8 py-6 overflow-hidden">
+            <div className="w-[50%] shrink-0 flex flex-col justify-center px-8 py-6 overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={event.id}
@@ -197,7 +197,7 @@ export default function MobileEventsBanner({ events }: { events: Event[] }) {
             </div>
 
             {/* Thumbnail */}
-            <div className="w-[55%] shrink-0 border-l border-border/50 p-5 flex items-center justify-center">
+            <div className="w-[50%] shrink-0 border-l border-border/50 p-5 flex items-center justify-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={event.id}
@@ -207,14 +207,14 @@ export default function MobileEventsBanner({ events }: { events: Event[] }) {
                   transition={{ duration: 0.3 }}
                   className="w-full h-full rounded-lg overflow-hidden relative"
                   style={{
-                    background: `linear-gradient(135deg, rgb(var(--c-bg-elevated)) 0%, ${color}18 100%)`,
-                    border: `1px solid ${color}25`,
+                    background: event.image ? 'transparent' : `linear-gradient(135deg, rgb(var(--c-bg-elevated)) 0%, ${color}18 100%)`,
+                    border: event.image ? 'none' : `1px solid ${color}25`,
                     minHeight: '200px',
                   }}
                 >
                   {event.image ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img src={event.image.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}` : event.image} alt={event.title} className="w-full h-full object-cover" />
+                    <img src={event.image.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${event.image}` : event.image} alt={event.title} className="w-full h-full object-contain" />
                   ) : (
                     <>
                       <div className="absolute inset-0 dot-grid opacity-20" />

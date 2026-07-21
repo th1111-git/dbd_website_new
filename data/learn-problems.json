@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Two Sum",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://leetcode.com/problems/two-sum/"
+  },
+  {
+    "name": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "topics": [
+      "Arrays",
+      "Median"
+    ],
+    "link": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+  },
+  {
+    "name": "Longest Substring Without Repeating Character",
+    "difficulty": "Medium",
+    "topics": [
+      "Strings",
+      "Dynamic Programming"
+    ],
+    "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  {
+    "name": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "topics": [
+      "Regex"
+    ],
+    "link": "https://leetcode.com/problems/regular-expression-matching/"
+  },
+  {
+    "name": "Missing Number",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc/challenges/missing-number-31"
+  },
+  {
+    "name": "Caesar Sipher",
+    "difficulty": "Easy",
+    "topics": [
+      "Strings"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc/challenges/caesar-cipher-1"
+  },
+  {
+    "name": "Anagram",
+    "difficulty": "Easy",
+    "topics": [
+      "Strings"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc/challenges/anagram"
+  },
+  {
+    "name": "Arrays - DS",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc-1670075092/challenges"
+  },
+  {
+    "name": "Left Rotation",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc-1670075092/challenges/array-left-rotation"
+  },
+  {
+    "name": "2D Array - DS",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc-1670075092/challenges/2d-array"
+  },
+  {
+    "name": "Dynamic Array",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-iisc-1670075092/challenges/dynamic-array"
+  },
+  {
+    "name": "Divisible Sum Pairs",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-2nd-ug-iisc/challenges/divisible-sum-pairs"
+  },
+  {
+    "name": "Subarray Division",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-2nd-ug-iisc/challenges/the-birthday-bar"
+  },
+  {
+    "name": "Closest Numbers",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-2nd-ug-iisc/challenges/closest-numbers"
+  },
+  {
+    "name": "Max Min",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-2nd-ug-iisc/challenges/angry-children"
+  },
+  {
+    "name": "Sansa and XOR",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest-2nd-ug-iisc/challenges/sansa-and-xor"
+  },
+  {
+    "name": "Cycle Detection",
+    "difficulty": "Medium",
+    "topics": [
+      "linked lists"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest3rd-iisc/challenges"
+  },
+  {
+    "name": "Inserting a Node Into a Sorted Doubly Linked List",
+    "difficulty": "Easy",
+    "topics": [
+      "linked lists"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest3rd-iisc/challenges/insert-a-node-into-a-sorted-doubly-linked-list"
+  },
+  {
+    "name": "Find Merge Point of Two Lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://www.hackerrank.com/contests/weekly-contest3rd-iisc/challenges/find-the-merge-point-of-two-joined-linked-lists"
+  },
+  {
+    "name": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://leetcode.com/problems/set-matrix-zeroes/"
+  },
+  {
+    "name": "Pascal's Triangle",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://leetcode.com/problems/pascals-triangle/"
+  },
+  {
+    "name": "Next Permutation",
+    "difficulty": "Medium",
+    "topics": [
+      "Arrays"
+    ],
+    "link": "https://leetcode.com/problems/next-permutation/"
+  }
+]

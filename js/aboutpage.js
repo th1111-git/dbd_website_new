@@ -1,17 +1,21 @@
-fetch(
-    `https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Profiles?maxRecords=1000&view=Grid%20view`,
-    {
-        method: "GET",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            Authorization: `Bearer pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409`,
-        },
-    })
+fetch('./data/members.json')
     .then(response => response.json())
-    .then(data => {
-        datas = data.records;
-        add_data(data.records);
+    .then(members => {
+        // Wrap as Airtable-like records for compatibility with add_data()
+        const records = members.map(m => ({
+            fields: {
+                Name: m.name,
+                Batch: m.year,
+                Photo: m.photo ? [{ url: m.photo.replace(/^\//, './') }] : null,
+                GitHub: m.links?.github || '',
+                LinkedIn: m.links?.linkedin || '',
+                Email: m.links?.email || '',
+                Bio: m.bio || '',
+                Username: m.name.toLowerCase().replace(/\s+/g, ''),
+            }
+        }));
+        datas = records;
+        add_data(records);
         unload();
     });
 

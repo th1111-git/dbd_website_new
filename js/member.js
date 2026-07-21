@@ -30,7 +30,7 @@ function no_member() {
           var photo = data.records[0].fields.Photo[0].url;
       }
       else{
-          var photo = "./img/user.png";
+          var photo = member.photo ? member.photo.replace(/^\//, './') : './img/user.png';
       }
       bio = data.records[0].fields.Bio ? data.records[0].fields.Bio : "";
       document.querySelector("#profile-photo").style.backgroundImage = `url(${photo})`;

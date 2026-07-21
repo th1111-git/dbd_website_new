@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import MemberGrid from '@/components/about/MemberGrid'
 import SectionHeading from '@/components/ui/SectionHeading'
 import PageBackground from '@/components/layout/PageBackground'
+import { fetchMembers } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'About',
 }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const members = await fetchMembers()
+
   return (
     <PageBackground>
       {/* About text */}
@@ -44,7 +47,7 @@ export default function AboutPage() {
           subtitle="The people who make Databased what it is."
         />
         <div className="mt-10">
-          <MemberGrid />
+          <MemberGrid members={members} />
         </div>
       </section>
     </PageBackground>

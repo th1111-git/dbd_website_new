@@ -1,14 +1,5 @@
 [
   {
-    "id": "open-day-2025",
-    "title": "IISc Open Day 2025",
-    "date": "2025-02-23",
-    "type": "Other",
-    "description": "Databased's showcase at IISc Open Day 2025 — interactive demos including terrain generation, Nim game, Tic-Tac-Toe with AI, and cryptography challenges.",
-    "link": "/pages/open-day-2025/",
-    "image": "/img/open-day-2025/team.webp"
-  },
-  {
     "id": "hack-and-seek-2025",
     "title": "Hack and Seek 2025",
     "date": "2025-08-01",
@@ -18,13 +9,175 @@
     "image": "/img/hack-and-seek/abcd.png"
   },
   {
-    "id": "algorithm-festival-2024",
-    "title": "Algorithm Festival 2024",
-    "date": "2024-04-20",
-    "type": "Competition",
-    "description": "A day-long competitive programming contest with problems from beginner to expert difficulty, featuring live rankings and prizes.",
-    "link": "/pages/algorithms/",
-    "image": "/img/algorithms/group-pic.webp"
+    "id": "worldquant-quantitative-finance-workshop",
+    "title": "WorldQuant Quantitative Finance Workshop",
+    "date": "2025-04-12",
+    "type": "Workshop",
+    "description": "Greetings from Databased,\n\nWe are excited to bring you a Quantitative Finance Workshop, organised by WorldQuant. The talk will cover an introduction to Quant Finance, a hands-on training session on building models as well as a mini challenge at the end with prizes for the winners.\n\nThe speaker is Mr. Utkarsh C Doshi, a BRAIN researcher, and an IIT Kharagpur alumni.\n\nThe workshop will also cover details of WorldQuant BRAIN and IQC 2025. The International Quant Championship has a prize pool of 100K, with internship and employment opportunities at WorldQuant available.\n\nThe workshop is for anyone who is interested in quant, finance or just wants to know about this field.",
+    "link": null,
+    "image": "/img/events/worldquant-quantitative-finance-workshop.jpeg",
+    "location": "DBS Auditorium",
+    "topics": [
+      "Quant"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "capture-the-flag-ctf",
+    "title": "Capture The Flag(CTF)",
+    "date": "2025-04-08",
+    "type": "CTF",
+    "description": "Abstract: Awake from stasis, you find yourself in the future, with only your trusty dbdPad by your side. Times have changed — humanity and technology have amalgamated into something quite dissimilar from both. Cyborgs patrol breathing mechanical factories dotting the wasteland. You must restore humanity to its former glory.\nThis new world calls for a new set of skills. You try contacting your former clan, Databased. The TCP request goes through — turns out they were one of the few races that didn't die out (along with Samasya). You are then summoned to receive enlightenment.\n\nBoring Abstract: This session marks the first project showcase of DELTA, where we will introduce the world of Capture the Flag (CTF). The session will include an overview of various types of CTFs, as well as live walkthroughs of interesting problems. Over the summer, we plan to participate in multiple CTF contests as a team. These challenges not only sharpen problem solving and cybersecurity skills but also provide valuable experience for industry. We also intend to host internal CTF sessions during the summer break, where participants will be divided into teams to compete in a collaborative and hands on learning environment.",
+    "link": null,
+    "image": "/img/events/capture-the-flag-ctf-.jpeg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "CTF"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "gpu-programming-for-beginners-part-2",
+    "title": "GPU Programming for Beginners - Part 2",
+    "date": "2025-04-06",
+    "type": "Talk",
+    "description": "Talk by Ullas Sir\nAbstract:\nIf you have never tried your hand at \nswimming, consider this class to be a first exposure to the extreme sport of swimming in deep water without having any prior experience. The title of the class is going to be: MILPSRLAEAL NE SMSAE, the meaning of which shall be elucidated if you attend the class 😂 You need not have attended the first class to be able to follow, although it would be good if you did.",
+    "link": null,
+    "image": "/img/events/gpu-programming-for-beginners-part-2.jpeg",
+    "location": "Room G02, OPB",
+    "topics": [
+      "GPU Programming",
+      "CUDA"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "gpu-programming-for-beginners",
+    "title": "GPU Programming for Beginners",
+    "date": "2025-03-31",
+    "type": "Talk",
+    "description": "Talk by Ullas Sir",
+    "link": null,
+    "image": "/img/events/gpu-programming-for-beginners.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "GPU Programming",
+      "CUDA"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "how-to-not-sit-idle-this-summer",
+    "title": "How to NOT sit idle this summer",
+    "date": "2025-03-18",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/how-to-not-sit-idle-this-summer.jpeg",
+    "location": "Room G01, OPB",
+    "topics": [],
+    "audience": [
+      "1st Year Students"
+    ]
+  },
+  {
+    "id": "basics-of-javascript",
+    "title": "Basics of JavaScript",
+    "date": "2025-03-14",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/basics-of-javascript.jpeg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "HTML",
+      "CSS"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "basics-of-html-and-css",
+    "title": "Basics of HTML and CSS",
+    "date": "2025-03-05",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/basics-of-html-and-css.jpeg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "HTML",
+      "CSS"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "open-day-2025",
+    "title": "IISc Open Day 2025",
+    "date": "2025-02-23",
+    "type": "Other",
+    "description": "Databased's showcase at IISc Open Day 2025 — interactive demos including terrain generation, Nim game, Tic-Tac-Toe with AI, and cryptography challenges.",
+    "link": "/pages/open-day-2025/",
+    "image": "/img/open-day-2025/team.webp"
+  },
+  {
+    "id": "a-deeper-look-at-python-functions-part-3",
+    "title": "A Deeper Look At Python Functions Part-3",
+    "date": "2025-02-05",
+    "type": "Talk",
+    "description": "Talk by Ullas Sir",
+    "link": null,
+    "image": "/img/events/a-deeper-look-at-python-functions-part-3.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "a-deeper-look-at-python-functions-part-2",
+    "title": "A Deeper Look At Python Functions Part-2",
+    "date": "2025-01-28",
+    "type": "Talk",
+    "description": "Talk by Ullas Sir",
+    "link": null,
+    "image": "/img/events/a-deeper-look-at-python-functions-part-2.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "a-deeper-look-at-python-functions",
+    "title": "A Deeper Look At Python Functions",
+    "date": "2025-01-23",
+    "type": "Talk",
+    "description": "Talk by Ullas Sir",
+    "link": null,
+    "image": "/img/events/a-deeper-look-at-python-functions.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
   },
   {
     "id": "ideathon-2024",
@@ -36,13 +189,78 @@
     "image": "/img/ideathon/ideathon_presentation.webp"
   },
   {
-    "id": "open-day-2024",
-    "title": "IISc Open Day 2024",
-    "date": "2024-02-24",
-    "type": "Other",
-    "description": "Our Open Day booth featured interactive exhibits on algorithms, computer vision, and cybersecurity for school students and visitors.",
-    "link": "/pages/open-day-2024/",
-    "image": "/img/open-day-2024/team.webp"
+    "id": "missing-semester-git",
+    "title": "Missing Semester - Git",
+    "date": "2024-10-22",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/missing-semester-git.jpg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "Git"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "systems-talk-2024",
+    "title": "Operating Systems: Under the Hood",
+    "date": "2024-10-15",
+    "type": "Talk",
+    "description": "Guest talk on modern OS design, memory management, and scheduling algorithms by a researcher from the CDS department.",
+    "link": null
+  },
+  {
+    "id": "missing-semester-debuggers-and-testing",
+    "title": "Missing Semester - Debuggers and Testing",
+    "date": "2024-10-15",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room G01, OPB",
+    "topics": [
+      "Debuggers"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "missing-semester-linux-and-shells",
+    "title": "Missing Semester - Linux and Shells",
+    "date": "2024-10-01",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/missing-semester-linux-and-shells.jpg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "Linux",
+      "Shells"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "adwords-an-industrial-problem-and-the-theory-behind",
+    "title": "Adwords - An industrial problem and the theory behind",
+    "date": "2024-09-17",
+    "type": "Talk",
+    "description": "Talk by Mohar Kanti Biswas",
+    "link": null,
+    "image": "/img/events/adwords-an-industrial-problem-and-the-theory-behind.jpg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "Algorithms",
+      "Graph Theory"
+    ],
+    "audience": [
+      "Beginner"
+    ]
   },
   {
     "id": "ml-workshop-2024",
@@ -53,12 +271,106 @@
     "link": null
   },
   {
-    "id": "systems-talk-2024",
-    "title": "Operating Systems: Under the Hood",
-    "date": "2024-10-15",
+    "id": "game-theory-and-machine-learning",
+    "title": "Game Theory and Machine Learning",
+    "date": "2024-09-10",
     "type": "Talk",
-    "description": "Guest talk on modern OS design, memory management, and scheduling algorithms by a researcher from the CDS department.",
-    "link": null
+    "description": "Talk by Siddharth Reddy",
+    "link": null,
+    "image": "/img/events/game-theory-and-machine-learning.jpg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "Machine Learning",
+      "Game Theory"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "combinatorial-arguments-in-linear-algebra",
+    "title": "Combinatorial Arguments in Linear Algebra",
+    "date": "2024-09-07",
+    "type": "Talk",
+    "description": "Talk by Saksham Agarwal",
+    "link": null,
+    "image": "/img/events/combinatorial-arguments-in-linear-algebra.jpg",
+    "location": "Room F08, OPB",
+    "topics": [
+      "Mathematics"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "summer-project-exposition-2024",
+    "title": "Summer Project Exposition - 2024",
+    "date": "2024-08-24",
+    "type": "Talk",
+    "description": "It is that time again! Time to see what wonderful projects the seniors have been working on over the past summer.",
+    "link": null,
+    "image": "/img/events/summer-project-exposition-2024.jpg",
+    "location": "Room G01, OPB",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "LLMs",
+      "Algorithms",
+      "Graph Theory"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "ai-ml-and-opportunities",
+    "title": "AI-ML and Opportunities",
+    "date": "2024-08-11",
+    "type": "Talk",
+    "description": "An informative talk by Shri. Sunny Manchanda (Director, DYSL-AI Lab, DRDO) introducing freshers to the world of AI-ML and sharing about the research their lab works on.",
+    "link": null,
+    "image": "/img/events/ai-ml-and-opportunities.webp",
+    "location": "Main Lecture Hall",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Academia"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "what-is-information",
+    "title": "What is Information?",
+    "date": "2024-08-10",
+    "type": "Talk",
+    "description": "Beautiful talk given by Prof. C Pandu Rangan by posing the question \"What is Information?\" and slowly formalizing the notion of Information.",
+    "link": null,
+    "image": "/img/events/what-is-information-.webp",
+    "location": "Main Lecture Hall",
+    "topics": [
+      "Information Theory",
+      "Cryptography "
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "tech-ideathon",
+    "title": "Tech Ideathon",
+    "date": "2024-08-10",
+    "type": "Competition",
+    "description": "The Databased Tech Ideathon was hosted for the freshers where they worked in teams to brainstorm innovative solutions to the problems faced by society.",
+    "link": null,
+    "image": "/img/events/tech-ideathon.JPG",
+    "location": "Main Lecture Hall",
+    "topics": [],
+    "audience": [
+      "Beginner"
+    ]
   },
   {
     "id": "web-dev-workshop-2024",
@@ -77,12 +389,346 @@
     "link": null
   },
   {
+    "id": "algorithm-festival-2024",
+    "title": "Algorithm Festival 2024",
+    "date": "2024-04-20",
+    "type": "Competition",
+    "description": "A day-long competitive programming contest with problems from beginner to expert difficulty, featuring live rankings and prizes.",
+    "link": "/pages/algorithms/",
+    "image": "/img/algorithms/group-pic.webp"
+  },
+  {
+    "id": "missing-semester-session-on-git",
+    "title": "Missing Semester Session on Git",
+    "date": "2024-03-14",
+    "type": "Talk",
+    "description": "The Missing Semester Sessions taken by Dhruva Kashyap, from CSA dept. on Git which is essential for every coding platform. The talk covered the basics of git, its structures and commands.",
+    "link": null,
+    "image": null,
+    "location": "Room 112, CSA",
+    "topics": [
+      "Git"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "randomness-in-computation-talk",
+    "title": "Randomness in Computation Talk",
+    "date": "2024-03-14",
+    "type": "Talk",
+    "description": "The talk on \"Randomness in Computation\" was taken by KVN Sreenivas, a PhD student in CSA dept. The talk covered about randomized algorithms and the usage of probabilities in the domain of Computer Science. The topics were covered starting from a basic level.",
+    "link": null,
+    "image": "/img/events/randomness-in-computation-talk.png",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Algorithms",
+      "Mathematics"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
     "id": "math-sessions-2024",
     "title": "Mathematics for CS Series",
     "date": "2024-03-01",
     "type": "Workshop",
     "description": "Five-session series covering discrete math, combinatorics, probability, and linear algebra — essential foundations for any CS student.",
     "link": "/pages/math-sessions/"
+  },
+  {
+    "id": "open-day-2024",
+    "title": "IISc Open Day 2024",
+    "date": "2024-02-24",
+    "type": "Other",
+    "description": "Our Open Day booth featured interactive exhibits on algorithms, computer vision, and cybersecurity for school students and visitors.",
+    "link": "/pages/open-day-2024/",
+    "image": "/img/open-day-2024/team.webp"
+  },
+  {
+    "id": "maths-problem-solving-session-3",
+    "title": "Maths Problem Solving Session-3",
+    "date": "2024-02-04",
+    "type": "Workshop",
+    "description": "Maths problem Session organised by Databased club in collaboration with Samasya, where we dealt with olympiad style Mathematics problems, puzzles and discussed beautiful solutions or proofs for various problems. Students from BS, B Tech from various years came and attended.",
+    "link": null,
+    "image": "/img/events/maths-problem-solving-session-3.jpeg",
+    "location": "Room F08, OPB",
+    "topics": [
+      "Mathematics"
+    ],
+    "audience": [
+      "Intermediate"
+    ]
+  },
+  {
+    "id": "maths-problem-solving-session-2",
+    "title": "Maths Problem Solving Session-2",
+    "date": "2024-01-21",
+    "type": "Workshop",
+    "description": "Second Maths problem Session organised by Databased club in collaboration with Samasya, where we dealt with olympiad style Mathematics problems, puzzles and discussed beautiful solutions or proofs for various problems. Students from BS, B Tech from various years came and attended.",
+    "link": null,
+    "image": "/img/events/maths-problem-solving-session-2.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Mathematics"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "graph-theory-session-1",
+    "title": "Graph Theory Session-1",
+    "date": "2024-01-20",
+    "type": "Talk",
+    "description": "First session by Ullas Sir from CSA Dept. on Graph Theory.  He taught Graph Theory in the view point of a Compiler and Program Assembly Code. Various fun puzzles were discussed which had beautiful solutions from just simple graphs.",
+    "link": null,
+    "image": "/img/events/graph-theory-session-1.png",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Graph Theory",
+      "Python",
+      "C"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "competitive-programming-session-19-1-24",
+    "title": "Competitive Programming Session 19/1/24",
+    "date": "2024-01-19",
+    "type": "Talk",
+    "description": "The club organised Competitive Programming session where in students coded problems under timer. Everyone in the class participated, tried to solve the problem and code it. The presenters explained efficient algorithms for the question. It helped everyone to test their speed and improve on their week points.",
+    "link": null,
+    "image": "/img/events/competitive-programming-session-19-1-24.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Algorithms",
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "maths-problem-solving-session-1",
+    "title": "Maths Problem Solving Session-1",
+    "date": "2024-01-14",
+    "type": "Workshop",
+    "description": "First Maths problem Session organised where we dealt with olympiad style Mathematics problems, puzzles and discussed beautiful solutions or proofs for various problems. Students from BS, B Tech from various years came and attended.",
+    "link": null,
+    "image": "/img/events/maths-problem-solving-session-1.jpeg",
+    "location": "OPB Wifi Room",
+    "topics": [
+      "Mathematics"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "developing-and-deploying-llm-based-solutions",
+    "title": "Developing and Deploying LLM based Solutions",
+    "date": "2024-01-07",
+    "type": "Workshop",
+    "description": "First session of a new Workshop Series by Anupam Purwar (Senior Research Scientist, Amazon) where he shares his insights on utilizing modern LLM technology to engineer practical solutions to problems.",
+    "link": null,
+    "image": "/img/events/developing-and-deploying-llm-based-solutions.png",
+    "location": "Online",
+    "topics": [
+      "Artificial Intelligence",
+      "LLMs"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "competitive-programming-session-1-5-24",
+    "title": "Competitive Programming Session 1/5/24",
+    "date": "2024-01-05",
+    "type": "Talk",
+    "description": "The club organised Competitive Programming session where five students presented respective problems. Everyone in the class participated, tried to solve the problem and code it. The presenters explained efficient algorithms for the question. More than 25 students from our batch joined the session.",
+    "link": null,
+    "image": "/img/events/competitive-programming-session-1-5-24.jpeg",
+    "location": "Room 117, CSA",
+    "topics": [
+      "Algorithms",
+      "Python"
+    ],
+    "audience": [
+      "Intermediate"
+    ]
+  },
+  {
+    "id": "neurosymbolic-learning",
+    "title": "Neurosymbolic Learning",
+    "date": "2024-01-03",
+    "type": "Talk",
+    "description": "A talk by Dr. Abhinav Verma from the CSE department of Penn State University on Neurosymbolic Learning where Machine Learning combines with Formal Methods. The talk is followed by an interactive session where he shares his insights about pursuing CS PhD in the US.",
+    "link": null,
+    "image": "/img/events/neurosymbolic-learning. Abhinav Verma",
+    "location": "Room 254 CSA",
+    "topics": [
+      "Machine Learning",
+      "Academia"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "launch-2023",
+    "title": "Databased Launch Event",
+    "date": "2023-09-15",
+    "type": "Other",
+    "description": "The inaugural event of Databased — introducing the club, its vision, and the activities planned for the year to new B.Tech. students.",
+    "link": "/pages/launch/",
+    "image": "/img/events/databased-launch-event.jpg"
+  },
+  {
+    "id": "bugathon",
+    "title": "Bugathon",
+    "date": "2023-08-13",
+    "type": "Competition",
+    "description": "An event that's completely different from a hackathon! (not). Come join us and test your skills and win exciting prizes!",
+    "link": null,
+    "image": "/img/events/bugathon.jpg",
+    "location": "Room G21, OPB",
+    "topics": [
+      "Python",
+      "C"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "pythonising-pseudocode",
+    "title": "Pythonising Pseudocode",
+    "date": "2023-08-13",
+    "type": "Talk",
+    "description": "It's time to see how to convert a series of steps into physical code which can be implemented by a computer. Let's get pythonising!",
+    "link": null,
+    "image": "/img/events/pythonising-pseudocode.jpg",
+    "location": "Room G21, OPB",
+    "topics": [
+      "Python",
+      "Logic"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "summer-project-exposition-2023",
+    "title": "Summer Project Exposition - 2023",
+    "date": "2023-08-13",
+    "type": "Talk",
+    "description": "It's time to delve into summer projects. Come join us in reminiscing our time during the various projects during the summer!",
+    "link": null,
+    "image": "/img/events/summer-project-exposition-2023.jpg",
+    "location": "Room G21, OPB",
+    "topics": [
+      "Python",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Cryptography "
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "a-web-of-computer-science",
+    "title": "A Web Of Computer Science",
+    "date": "2023-08-12",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/a-web-of-computer-science.jpg",
+    "location": "Room G21, OPB",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computational Physics ",
+      "Robotics"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "databased-launch-event",
+    "title": "Databased Launch Event",
+    "date": "2023-08-12",
+    "type": "Other",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room G21, OPB",
+    "topics": [
+      "Python",
+      "Logic",
+      "Compilers"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "cryptography-talk",
+    "title": "Cryptography Talk",
+    "date": "2023-06-03",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 254 , CSA",
+    "topics": [
+      "Logic",
+      "Cryptography "
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "computational-physics-talk",
+    "title": "Computational Physics Talk",
+    "date": "2023-05-27",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 254 ,CSA ",
+    "topics": [
+      "Computational Physics "
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "compiler",
+    "title": "Compiler",
+    "date": "2023-05-20",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 , CSA ",
+    "topics": [
+      "Compilers",
+      "C"
+    ],
+    "audience": [
+      "Intermediate"
+    ]
   },
   {
     "id": "paradox-festival-",
@@ -93,11 +739,193 @@
     "link": "/pages/paradox/"
   },
   {
-    "id": "launch-2023",
-    "title": "Databased Launch Event",
-    "date": "2023-09-15",
+    "id": "paradox-festival",
+    "title": "Paradox Festival ",
+    "date": "2023-05-14",
     "type": "Other",
-    "description": "The inaugural event of Databased — introducing the club, its vision, and the activities planned for the year to new B.Tech. students.",
-    "link": "/pages/launch/"
+    "description": "An informative discussion session by the students about various mathematical paradoxes that form an integral part of how we perceive \"infinity\"\n<a href=\"\nClick here to learn more</a>",
+    "link": "https://databased.csa.iisc.ac.in/pages/paradox/#\">",
+    "image": "/img/events/paradox-festival-.jpg",
+    "location": "Room 254 CSA",
+    "topics": [
+      "Paradox",
+      "Logic"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "lecture-06-python-from-a-compiler-s-standpoint",
+    "title": "Lecture 06: Python from a Compiler's Standpoint",
+    "date": "2023-04-07",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/lecture-06-python-from-a-compiler-s-standpoint.jpg",
+    "location": "Room 117 CSA ",
+    "topics": [
+      "Compilers",
+      "Python",
+      "C"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "operators-functions-order-of-precedence",
+    "title": "Operators & Functions: Order of precedence ",
+    "date": "2023-04-04",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/operators-functions-order-of-precedence-.jpg",
+    "location": "Room 117 CSA",
+    "topics": [
+      "Compilers",
+      "Python",
+      "C"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "knn",
+    "title": "KNN",
+    "date": "2023-04-02",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 CSA",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "constant-folding-template-in-c",
+    "title": "Constant folding, Template in C",
+    "date": "2023-03-31",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/constant-folding-template-in-c.jpg",
+    "location": "Room 117 CSA",
+    "topics": [
+      "Compilers",
+      "C",
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "aiml-d-scatter-plots-pair-plots",
+    "title": "AIML: D Scatter Plots & Pair plots",
+    "date": "2023-03-25",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 CSA",
+    "topics": [
+      "Machine Learning",
+      "Artificial Intelligence"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "garbage-collection-in-c",
+    "title": "Garbage collection in C",
+    "date": "2023-03-24",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 CSA",
+    "topics": [
+      "C",
+      "Compilers"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "databases-and-datapoints",
+    "title": "Databases and datapoints",
+    "date": "2023-03-19",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 CSA",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "garbage-collection-in-python",
+    "title": "Garbage collection in Python ",
+    "date": "2023-03-18",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": null,
+    "location": "Room 117 CSA ",
+    "topics": [
+      "Python",
+      "Compilers"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "reference-count",
+    "title": "Reference Count ",
+    "date": "2023-03-15",
+    "type": "Talk",
+    "description": "This was the first Lecture by Ullas😀 where we learnt python from a compiler's perspective .",
+    "link": null,
+    "image": "/img/events/reference-count-.jpg",
+    "location": "Room 117 , CSA",
+    "topics": [
+      "Compilers",
+      "Python"
+    ],
+    "audience": [
+      "Beginner"
+    ]
+  },
+  {
+    "id": "introduction-to-aiml",
+    "title": "Introduction to AIML",
+    "date": "2023-02-03",
+    "type": "Talk",
+    "description": "",
+    "link": null,
+    "image": "/img/events/introduction-to-aiml.jpg",
+    "location": "Room 117 CSA",
+    "topics": [
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "audience": [
+      "Beginner"
+    ]
   }
 ]

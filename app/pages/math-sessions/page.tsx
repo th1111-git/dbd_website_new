@@ -27,46 +27,11 @@ export interface MathSession {
   solutions: string
 }
 
+import mathSessionsData from '@/data/math-sessions.json'
+
 async function fetchMathSessions(): Promise<MathSession[]> {
-  const apiKey = process.env.AIRTABLE_API_KEY || 'pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409'
-  if (!apiKey) {
-    console.warn('[math-sessions] AIRTABLE_API_KEY not set — skipping fetch.')
-    return []
-  }
-
-  try {
-    const res = await fetch(
-      'https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Math%20Sessions?maxRecords=50&view=Grid%20view',
-      {
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Bearer ${apiKey}`,
-        },
-      }
-    )
-
-    if (!res.ok) {
-      console.error(`[math-sessions] Airtable error: ${res.status}`)
-      return []
-    }
-
-    const json = await res.json()
-
-    return (json.records ?? [])
-      .map((record: any) => ({
-        id: record.id as string,
-        date: (record.fields['Date'] as string) ?? '',
-        problems: (record.fields['Problems PDF']?.[0]?.url as string) ?? '',
-        solutions: (record.fields['Solutions PDF']?.[0]?.url as string) ?? '',
-      }))
-      // Sort newest first
-      .sort((a: MathSession, b: MathSession) =>
-        new Date(b.date).getTime() - new Date(a.date).getTime()
-      )
-  } catch (err) {
-    console.error('[math-sessions] Fetch failed:', err)
-    return []
-  }
+  return (mathSessionsData as MathSession[])
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export default async function MathSessionsPage() {

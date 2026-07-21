@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import EventCard from './EventCard'
 import EventFilters from './EventFilters'
@@ -9,109 +9,17 @@ import EventDetailModal from './EventDetailModal'
 import SectionHeading from '@/components/ui/SectionHeading'
 import type { Event } from './EventCard'
 import PageBackground from '@/components/layout/PageBackground'
-import eventsData from '@/data/events.json'
 
-const AIRTABLE_URL = 'https://api.airtable.com/v0/appHwUzo4ARCQQlwr/Events?view=Grid%20view'
-const AIRTABLE_TOKEN = 'pat2bEq3dsaXHSBH9.2edd33a7b1c2de8fd5e4fe14b82900cf807d2c9b56dfead6a8bdd48715826409'
-
-function mapType(airtableType: string, name: string = "") {
-  if (name.toLowerCase().includes('ctf') || name.toLowerCase().includes('capture the flag')) {
-    return 'CTF'
-  }
-  const t = (airtableType || '').trim().toLowerCase()
-  if (t === 'talk' || t === 'seminar' || t === 'learning session') return 'Talk'
-  if (t === 'workshop' || t === 'problem solving') return 'Workshop'
-  if (t === 'hackathon' || t === 'competition') return 'Competition'
-  return 'Other'
+interface EventsClientProps {
+  events: Event[]
 }
 
-export default function EventsClient() {
-  const [events, setEvents] = useState<Event[]>(eventsData as Event[])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(false)
+export default function EventsClient({ events }: EventsClientProps) {
   const [activeFilter, setActiveFilter] = useState('All')
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
 
-  useEffect(() => {
-    fetch(AIRTABLE_URL, {
-      headers: {
-        Authorization: `Bearer ${AIRTABLE_TOKEN}`
-      }
-    })
-      .then(res => res.json())
-      .then(data => {
-        const parsedEvents: Event[] = data.records.map((record: any) => {
-          const f = record.fields;
-          const name = f.Name || "";
-          
-          let description = f.Description || "";
-          let link = null;
-          
-          if (description) {
-            const linkMatch = description.match(/Link:\s*(https?:\/\/\S+)/i) || description.match(/(https?:\/\/\S+)/i);
-            if (linkMatch) {
-              link = linkMatch[1].trim();
-              description = description.replace(/Link:\s*https?:\/\/\S+/gi, '').trim();
-              description = description.replace(/https?:\/\/\S+/gi, '').trim();
-            }
-          }
-
-          let imagePath = null;
-          if (f.Files && f.Files.length > 0) {
-            imagePath = f.Files[0].url;
-          }
-
-          return {
-            id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-') || record.id,
-            title: name,
-            date: f.Date || "",
-            type: mapType(f.Type, name),
-            description: description,
-            link: link,
-            image: imagePath,
-            location: f.Location || null,
-            topics: f.Topics || [],
-            audience: f.Audience || []
-          };
-        });
-
-        // Merge with static events from data/events.json
-        const staticEvents = eventsData as Event[];
-        const combinedEvents = [...staticEvents];
-        const staticIds = new Set(staticEvents.map(e => e.id));
-        
-        parsedEvents.forEach(e => {
-          if (!staticIds.has(e.id)) {
-            combinedEvents.push(e);
-          }
-        });
-
-        // Sort events by date descending
-        combinedEvents.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-        setEvents(combinedEvents);
-      })
-      .catch(err => {
-        console.error("Failed to fetch events:", err);
-        setError(true);
-      })
-      .finally(() => setLoading(false));
-  }, []);
-
   const filtered =
     activeFilter === 'All' ? events : events.filter((e) => e.type === activeFilter)
-
-
-
-  if (error) {
-    return (
-      <PageBackground>
-        <div className="flex justify-center items-center h-screen font-mono text-sm text-text-secondary">
-          Failed to load events.
-        </div>
-      </PageBackground>
-    )
-  }
 
   return (
     <PageBackground>
@@ -176,4 +84,3 @@ export default function EventsClient() {
     </PageBackground>
   )
 }
-

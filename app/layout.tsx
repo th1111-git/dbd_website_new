@@ -3,7 +3,6 @@ import { Inter, JetBrains_Mono, League_Spartan } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import BackgroundEffects from '@/components/layout/BackgroundEffects'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' })
@@ -25,11 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${leagueSpartan.variable}`} suppressHydrationWarning>
       <body className="bg-bg-base text-text-primary font-sans antialiased">
-        {/* Fixed background layer — z:0, behind all content */}
-        <BackgroundEffects />
-
-        {/* Content wrapper — positioned after BackgroundEffects in DOM so it
-            paints above it without needing an explicit z-index */}
         <div className="relative flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1">{children}</main>

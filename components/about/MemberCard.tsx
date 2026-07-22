@@ -30,7 +30,7 @@ export default function MemberCard({ member, onClick }: { member: Member; onClic
       <div className="w-16 h-16 rounded-full overflow-hidden bg-accent-dim flex items-center justify-center shrink-0 ring-1 ring-transparent group-hover:ring-accent/30 transition-all duration-300">
         {member.photo ? (
           <Image
-            src={member.photo.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.photo}` : member.photo}
+            src={member.photo}
             alt={member.name}
             width={64}
             height={64}

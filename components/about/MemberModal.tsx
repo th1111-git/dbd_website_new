@@ -63,7 +63,7 @@ export default function MemberModal({ member, onClose }: MemberModalProps) {
               <div className="w-36 h-36 rounded-full overflow-hidden bg-accent-dim ring-2 ring-accent/30 flex items-center justify-center">
                 {member.photo ? (
                   <Image
-                    src={member.photo}
+                    src={member.photo.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.photo}` : member.photo}
                     alt={member.name}
                     width={144}
                     height={144}

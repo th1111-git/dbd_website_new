@@ -9,4 +9,3 @@ out/
 data/members-generated.json
 data/events-generated.json
 public/events/attachments/*
-public/img

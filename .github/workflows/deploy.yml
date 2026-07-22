@@ -25,9 +25,6 @@ jobs:
 
 
 
-      - name: Copy images to public directory
-        run: cp -R img public/img
-
       - name: Build
         run: npm run build
         env:

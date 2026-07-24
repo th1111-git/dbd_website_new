@@ -65,7 +65,6 @@ npm run lint
 | Variable | Description | Example |
 |---|---|---|
 | `NEXT_PUBLIC_BASE_PATH` | Subdirectory path for GitHub Pages | `/dbd_website_new` |
-| `AIRTABLE_API_KEY` | Read-only API key for fetching data | `patXXXXXXXXXXXXXX` |
 
 Create a `.env.local` file in the project root. Never commit it.
 
@@ -79,20 +78,27 @@ databasediisc.github.io/
 ├── app/                          # Next.js App Router
 │   ├── layout.tsx                # Root layout (fonts, metadata, navbar, footer)
 │   ├── globals.css               # Global styles, CSS variables, theme
-│   ├── page.tsx                  # / — Home page
+│   ├── (home)/
+│   │   └── page.tsx              # / — Home page
+│   ├── api/                      # API routes
 │   ├── not-found.tsx             # 404 page
 │   ├── about/
 │   │   └── page.tsx              # /about — About & Members
-│   ├── events/
-│   │   └── page.tsx              # /events — Events listing
 │   ├── blog/
 │   │   └── page.tsx              # /blog — Blog posts
+│   ├── events/
+│   │   └── page.tsx              # /events — Events listing
 │   ├── pages/                    # Modernized event-specific pages
+│   │   ├── algorithms/page.tsx
+│   │   ├── axiom/page.tsx
+│   │   ├── hack-and-seek/page.tsx
+│   │   ├── ideathon/page.tsx
+│   │   ├── math-sessions/page.tsx
 │   │   ├── open-day-2024/page.tsx
 │   │   ├── open-day-2025/page.tsx
-│   │   ├── algorithms/page.tsx
-│   │   ├── hack-and-seek/page.tsx
-│   │   └── ideathon/page.tsx
+│   │   └── paradox/page.tsx
+│   ├── projects/
+│   │   └── page.tsx              # /projects — Projects showcase
 │   └── resources/
 │       └── page.tsx              # /resources — Learning resources
 │
@@ -137,14 +143,12 @@ databasediisc.github.io/
 │   └── iisc-linesketch.png       # IISc campus line-art illustration
 │
 ├── pages/                        # Legacy static event pages (separate from App Router)
+│   ├── _error.tsx
+│   ├── commons/                  # Shared legacy CSS/JS
 │   ├── launch/                   # Club launch event page
 │   ├── math-sessions/            # Math Sessions page
 │   ├── paradox/                  # Paradox CTF page
-│   ├── projects/                 # Projects page
-│   └── commons/                  # Shared legacy CSS/JS
-│
-├── scripts/
-│   └── fetch-airtable-data.js    # Build-time script to pull data from Airtable
+│   └── projects/                 # Projects page
 │
 ├── .github/
 │   └── workflows/
@@ -545,27 +549,45 @@ interface Resource {
 
 ## Adding Content
 
-### Airtable Sync
+### Editing Data Files
 
-Event and member data is managed in Airtable. During the GitHub Actions build process, `scripts/fetch-airtable-data.js` runs automatically, fetches the latest data from Airtable, and writes it to `data/events.json` and `data/members.json`.
-
-**To update data locally:**
-1. Ensure your `.env.local` has a valid `AIRTABLE_API_KEY`.
-2. Run `npm run dev` or `node scripts/fetch-airtable-data.js` to refresh the JSON files.
-
-*Note: You can manually edit the JSON files for local testing, but your changes will be overwritten by the Airtable sync during the next build.*
+Event, member, and resource data are directly managed in the `data/` directory using JSON files. You can update the content by modifying these files.
 
 ---
 
 ### Add an event
 
-To add an event, add a row to the "Events" table in Airtable. Ensure all required fields are filled (Title, Date, Type, Description). If you upload an image to Airtable, it will be automatically linked. Alternatively, manual fallback events are hardcoded for edge cases directly in `events.json` (such as the legacy CTF / Algorithm Festival pages).
+To add an event, edit `data/events.json` and add a new entry to the JSON array. Ensure all required fields are filled:
+
+```json
+{
+  "id": "event-slug",
+  "title": "Event Title",
+  "date": "2025-01-01",
+  "type": "Talk",
+  "description": "A brief description of the event.",
+  "link": "https://example.com"
+}
+```
 
 ---
 
 ### Add a member
 
-To add a member, add a row to the "Members" table in Airtable. The "Category" should be "Core Team" or "Coordinators". You can provide their GitHub and LinkedIn URLs directly in the table.
+To add a member, edit `data/members.json`. Ensure that the `category` matches either "Core Team" or "Coordinators". You can also provide their GitHub and LinkedIn URLs:
+
+```json
+{
+  "name": "Jane Doe",
+  "role": "Coordinator",
+  "year": "2026",
+  "category": "Coordinators",
+  "links": {
+    "github": "https://github.com/janedoe",
+    "linkedin": "https://linkedin.com/in/janedoe"
+  }
+}
+```
 
 ---
 
@@ -615,9 +637,8 @@ Pushing to `master` triggers the GitHub Actions workflow at `.github/workflows/d
 1. Checks out code
 2. Sets up Node 22 with npm cache
 3. Runs `npm ci`
-4. Runs `node scripts/fetch-airtable-data.js` to pull fresh data (injecting `AIRTABLE_API_KEY` from GitHub Secrets).
-5. Runs `npm run build` with `NEXT_PUBLIC_BASE_PATH=/dbd_website_new`
-6. Deploys the `./out/` directory to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`
+4. Runs `npm run build` with `NEXT_PUBLIC_BASE_PATH=/dbd_website_new`
+5. Deploys the `./out/` directory to the `gh-pages` branch via `peaceiris/actions-gh-pages@v4`
 
 GitHub Pages serves the `gh-pages` branch at the live URL.
 

@@ -15,18 +15,6 @@ export default function Hero() {
 
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 pt-20 max-w-4xl mx-auto w-full">
-        {/* Eyebrow pill */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="flex items-center gap-2.5 mb-10 px-4 py-2 rounded-full border border-accent/40 bg-bg-base/60 backdrop-blur-sm"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse shrink-0" />
-          <span className="font-mono text-xs text-accent tracking-widest uppercase">
-            IISc's Computer Science Crew
-          </span>
-        </motion.div>
 
         {/* Logo image — the primary visual */}
         <motion.div

@@ -29,7 +29,6 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          NEXT_PUBLIC_BASE_PATH: /dbd_website_new
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
